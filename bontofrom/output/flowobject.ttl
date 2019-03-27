@@ -1,0 +1,402 @@
+@prefix bont:  <http://ontology.bonsai.uno/core#> .
+@prefix brdffo:  <http://rdf.bonsai.uno/flowobject/exiobase3_3_17/> .
+
+brdffo:C_ADDC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_AGSL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ALUM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ALUO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ALUW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ANTH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ASHW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BEVR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BIOD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BIOF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BIOG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BIOP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BIOS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BITU  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BKBP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BOTW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_BRIK  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CATL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CHAR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CHEM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CHMF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CMNT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COKC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COKE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COMF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COMP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COMW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CONS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CONW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COOG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COPO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COPP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COPW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_COTA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_CRMC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_DAIR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_DOIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_EDUC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ELMA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ETHA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_EXTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FABM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FAUX  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FIBR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FINS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FINT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FISH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FOIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FORE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FSHP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FURN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_FVEG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GARM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GASD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GASE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GASL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GCOK  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GJET  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GLAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_GLAW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_HEAL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_HORE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_HWAT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_INCW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_IRON  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_KERO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_KJET  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LANW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LETH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LIBC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LPGA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LUBR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LZTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LZTP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_LZTW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MACH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MANB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MANC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MARE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MBFG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MBIO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MDIA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MEIN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_METC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MGSL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MGWG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MILK  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MOSG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_MOTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_NAPT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_NFER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_NIKO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_NSPP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_NUCF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OANP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OBIO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OBUS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OCER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OFMA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OFOD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OGPL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OILS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OMEA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ONFM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ONFO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ONFW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ONMM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ORAN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_ORGA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OSER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OTBC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OTCR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_OTRE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PADF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PAPE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PAPR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PARI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PARW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PATF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PCAT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PEAT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PETC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PFER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PIGS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PLAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PLAW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PLTR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POME  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_POWZ  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PPIG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PPLT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PREM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PREO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PREW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PRHH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PTEL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_PULP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RATV  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_REAL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RECR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_REFF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RESD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RGAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RICE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RUBP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_RYMS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_SDCL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_STEL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_STEW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_STON  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_SUBC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_SUGB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_SUGR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TAIR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TAUX  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TDFU  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TDMO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TDRT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TDWH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TEXT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TLND  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TOBC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TPIP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TRAI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TWAI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_TWAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_VOIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WASF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WASO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WATR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WHEA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WHSP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WOOD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WOOL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .
+
+brdffo:C_WOOW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:FlowObject .

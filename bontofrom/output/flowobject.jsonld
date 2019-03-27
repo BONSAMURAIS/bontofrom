@@ -1,0 +1,1008 @@
+{
+  "@context": {
+    "bont": "http://ontology.bonsai.uno/core#",
+    "brdffo": "http://rdf.bonsai.uno/flowobject/exiobase3_3_17/"
+  },
+  "@graph": [
+    {
+      "@id": "brdffo:C_ADDC",
+      "@type": "bont:FlowObject",
+      "label": "Additives/Blending Components"
+    },
+    {
+      "@id": "brdffo:C_AGSL",
+      "@type": "bont:FlowObject",
+      "label": "Aviation Gasoline"
+    },
+    {
+      "@id": "brdffo:C_ALUM",
+      "@type": "bont:FlowObject",
+      "label": "Aluminium and aluminium products"
+    },
+    {
+      "@id": "brdffo:C_ALUO",
+      "@type": "bont:FlowObject",
+      "label": "Aluminium ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_ALUW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary aluminium for treatment; Re-processing of secondary aluminium into new aluminium"
+    },
+    {
+      "@id": "brdffo:C_ANTH",
+      "@type": "bont:FlowObject",
+      "label": "Anthracite"
+    },
+    {
+      "@id": "brdffo:C_ASHW",
+      "@type": "bont:FlowObject",
+      "label": "Ash for treatment; Re-processing of ash into clinker"
+    },
+    {
+      "@id": "brdffo:C_BEVR",
+      "@type": "bont:FlowObject",
+      "label": "Beverages"
+    },
+    {
+      "@id": "brdffo:C_BIOD",
+      "@type": "bont:FlowObject",
+      "label": "Biodiesels"
+    },
+    {
+      "@id": "brdffo:C_BIOF",
+      "@type": "bont:FlowObject",
+      "label": "Food waste for treatment: biogasification and land application"
+    },
+    {
+      "@id": "brdffo:C_BIOG",
+      "@type": "bont:FlowObject",
+      "label": "Biogasoline"
+    },
+    {
+      "@id": "brdffo:C_BIOP",
+      "@type": "bont:FlowObject",
+      "label": "Paper waste for treatment: biogasification and land application"
+    },
+    {
+      "@id": "brdffo:C_BIOS",
+      "@type": "bont:FlowObject",
+      "label": "Sewage sludge for treatment: biogasification and land application"
+    },
+    {
+      "@id": "brdffo:C_BITU",
+      "@type": "bont:FlowObject",
+      "label": "Bitumen"
+    },
+    {
+      "@id": "brdffo:C_BKBP",
+      "@type": "bont:FlowObject",
+      "label": "BKB/Peat Briquettes"
+    },
+    {
+      "@id": "brdffo:C_BOTW",
+      "@type": "bont:FlowObject",
+      "label": "Bottles for treatment; Recycling of bottles by direct reuse"
+    },
+    {
+      "@id": "brdffo:C_BRIK",
+      "@type": "bont:FlowObject",
+      "label": "Bricks; tiles and construction products; in baked clay"
+    },
+    {
+      "@id": "brdffo:C_CATL",
+      "@type": "bont:FlowObject",
+      "label": "Cattle"
+    },
+    {
+      "@id": "brdffo:C_CHAR",
+      "@type": "bont:FlowObject",
+      "label": "Charcoal"
+    },
+    {
+      "@id": "brdffo:C_CHEM",
+      "@type": "bont:FlowObject",
+      "label": "Chemicals nec"
+    },
+    {
+      "@id": "brdffo:C_CHMF",
+      "@type": "bont:FlowObject",
+      "label": "Chemical and fertilizer minerals; salt and other mining and quarrying products n.e.c."
+    },
+    {
+      "@id": "brdffo:C_CMNT",
+      "@type": "bont:FlowObject",
+      "label": "Cement; lime and plaster"
+    },
+    {
+      "@id": "brdffo:C_COIL",
+      "@type": "bont:FlowObject",
+      "label": "Crude petroleum and services related to crude oil extraction; excluding surveying"
+    },
+    {
+      "@id": "brdffo:C_COKC",
+      "@type": "bont:FlowObject",
+      "label": "Coking Coal"
+    },
+    {
+      "@id": "brdffo:C_COKE",
+      "@type": "bont:FlowObject",
+      "label": "Coke Oven Coke"
+    },
+    {
+      "@id": "brdffo:C_COMF",
+      "@type": "bont:FlowObject",
+      "label": "Food waste for treatment: composting and land application"
+    },
+    {
+      "@id": "brdffo:C_COMP",
+      "@type": "bont:FlowObject",
+      "label": "Computer and related services (72)"
+    },
+    {
+      "@id": "brdffo:C_COMW",
+      "@type": "bont:FlowObject",
+      "label": "Paper and wood waste for treatment: composting and land application"
+    },
+    {
+      "@id": "brdffo:C_CONS",
+      "@type": "bont:FlowObject",
+      "label": "Construction work (45)"
+    },
+    {
+      "@id": "brdffo:C_CONW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary construction material for treatment; Re-processing of secondary construction material into aggregates"
+    },
+    {
+      "@id": "brdffo:C_COOG",
+      "@type": "bont:FlowObject",
+      "label": "Coke oven gas"
+    },
+    {
+      "@id": "brdffo:C_COPO",
+      "@type": "bont:FlowObject",
+      "label": "Copper ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_COPP",
+      "@type": "bont:FlowObject",
+      "label": "Copper products"
+    },
+    {
+      "@id": "brdffo:C_COPW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary copper for treatment; Re-processing of secondary copper into new copper"
+    },
+    {
+      "@id": "brdffo:C_COTA",
+      "@type": "bont:FlowObject",
+      "label": "Coal Tar"
+    },
+    {
+      "@id": "brdffo:C_CRMC",
+      "@type": "bont:FlowObject",
+      "label": "Ceramic goods"
+    },
+    {
+      "@id": "brdffo:C_DAIR",
+      "@type": "bont:FlowObject",
+      "label": "Dairy products"
+    },
+    {
+      "@id": "brdffo:C_DOIL",
+      "@type": "bont:FlowObject",
+      "label": "Gas/Diesel Oil"
+    },
+    {
+      "@id": "brdffo:C_EDUC",
+      "@type": "bont:FlowObject",
+      "label": "Education services (80)"
+    },
+    {
+      "@id": "brdffo:C_ELMA",
+      "@type": "bont:FlowObject",
+      "label": "Electrical machinery and apparatus n.e.c. (31)"
+    },
+    {
+      "@id": "brdffo:C_ETHA",
+      "@type": "bont:FlowObject",
+      "label": "Ethane"
+    },
+    {
+      "@id": "brdffo:C_EXTO",
+      "@type": "bont:FlowObject",
+      "label": "Extra-territorial organizations and bodies"
+    },
+    {
+      "@id": "brdffo:C_FABM",
+      "@type": "bont:FlowObject",
+      "label": "Fabricated metal products; except machinery and equipment (28)"
+    },
+    {
+      "@id": "brdffo:C_FAUX",
+      "@type": "bont:FlowObject",
+      "label": "Services auxiliary to financial intermediation (67)"
+    },
+    {
+      "@id": "brdffo:C_FIBR",
+      "@type": "bont:FlowObject",
+      "label": "Plant-based fibers"
+    },
+    {
+      "@id": "brdffo:C_FINS",
+      "@type": "bont:FlowObject",
+      "label": "Insurance and pension funding services; except compulsory social security services (66)"
+    },
+    {
+      "@id": "brdffo:C_FINT",
+      "@type": "bont:FlowObject",
+      "label": "Financial intermediation services; except insurance and pension funding services (65)"
+    },
+    {
+      "@id": "brdffo:C_FISH",
+      "@type": "bont:FlowObject",
+      "label": "Fish and other fishing products; services incidental of fishing (05)"
+    },
+    {
+      "@id": "brdffo:C_FOIL",
+      "@type": "bont:FlowObject",
+      "label": "Heavy Fuel Oil"
+    },
+    {
+      "@id": "brdffo:C_FORE",
+      "@type": "bont:FlowObject",
+      "label": "Products of forestry; logging and related services (02)"
+    },
+    {
+      "@id": "brdffo:C_FSHP",
+      "@type": "bont:FlowObject",
+      "label": "Fish products"
+    },
+    {
+      "@id": "brdffo:C_FURN",
+      "@type": "bont:FlowObject",
+      "label": "Furniture; other manufactured goods n.e.c. (36)"
+    },
+    {
+      "@id": "brdffo:C_FVEG",
+      "@type": "bont:FlowObject",
+      "label": "Vegetables; fruit; nuts"
+    },
+    {
+      "@id": "brdffo:C_GARM",
+      "@type": "bont:FlowObject",
+      "label": "Wearing apparel; furs (18)"
+    },
+    {
+      "@id": "brdffo:C_GASD",
+      "@type": "bont:FlowObject",
+      "label": "Distribution services of gaseous fuels through mains"
+    },
+    {
+      "@id": "brdffo:C_GASE",
+      "@type": "bont:FlowObject",
+      "label": "Natural gas and services related to natural gas extraction; excluding surveying"
+    },
+    {
+      "@id": "brdffo:C_GASL",
+      "@type": "bont:FlowObject",
+      "label": "Natural Gas Liquids"
+    },
+    {
+      "@id": "brdffo:C_GCOK",
+      "@type": "bont:FlowObject",
+      "label": "Gas Coke"
+    },
+    {
+      "@id": "brdffo:C_GJET",
+      "@type": "bont:FlowObject",
+      "label": "Gasoline Type Jet Fuel"
+    },
+    {
+      "@id": "brdffo:C_GLAS",
+      "@type": "bont:FlowObject",
+      "label": "Glass and glass products"
+    },
+    {
+      "@id": "brdffo:C_GLAW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary glass for treatment; Re-processing of secondary glass into new glass"
+    },
+    {
+      "@id": "brdffo:C_HEAL",
+      "@type": "bont:FlowObject",
+      "label": "Health and social work services (85)"
+    },
+    {
+      "@id": "brdffo:C_HORE",
+      "@type": "bont:FlowObject",
+      "label": "Hotel and restaurant services (55)"
+    },
+    {
+      "@id": "brdffo:C_HWAT",
+      "@type": "bont:FlowObject",
+      "label": "Steam and hot water supply services"
+    },
+    {
+      "@id": "brdffo:C_INCF",
+      "@type": "bont:FlowObject",
+      "label": "Food waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCL",
+      "@type": "bont:FlowObject",
+      "label": "Plastic waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCM",
+      "@type": "bont:FlowObject",
+      "label": "Intert/metal waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCO",
+      "@type": "bont:FlowObject",
+      "label": "Oil/hazardous waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCP",
+      "@type": "bont:FlowObject",
+      "label": "Paper waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCT",
+      "@type": "bont:FlowObject",
+      "label": "Textiles waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_INCW",
+      "@type": "bont:FlowObject",
+      "label": "Wood waste for treatment: incineration"
+    },
+    {
+      "@id": "brdffo:C_IRON",
+      "@type": "bont:FlowObject",
+      "label": "Iron ores"
+    },
+    {
+      "@id": "brdffo:C_KERO",
+      "@type": "bont:FlowObject",
+      "label": "Kerosene"
+    },
+    {
+      "@id": "brdffo:C_KJET",
+      "@type": "bont:FlowObject",
+      "label": "Kerosene Type Jet Fuel"
+    },
+    {
+      "@id": "brdffo:C_LANF",
+      "@type": "bont:FlowObject",
+      "label": "Food waste for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LANI",
+      "@type": "bont:FlowObject",
+      "label": "Inert/metal/hazardous waste for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LANL",
+      "@type": "bont:FlowObject",
+      "label": "Plastic waste for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LANP",
+      "@type": "bont:FlowObject",
+      "label": "Paper for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LANT",
+      "@type": "bont:FlowObject",
+      "label": "Textiles waste for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LANW",
+      "@type": "bont:FlowObject",
+      "label": "Wood waste for treatment: landfill"
+    },
+    {
+      "@id": "brdffo:C_LETH",
+      "@type": "bont:FlowObject",
+      "label": "Leather and leather products (19)"
+    },
+    {
+      "@id": "brdffo:C_LIBC",
+      "@type": "bont:FlowObject",
+      "label": "Lignite/Brown Coal"
+    },
+    {
+      "@id": "brdffo:C_LPGA",
+      "@type": "bont:FlowObject",
+      "label": "Liquefied Petroleum Gases (LPG)"
+    },
+    {
+      "@id": "brdffo:C_LUBR",
+      "@type": "bont:FlowObject",
+      "label": "Lubricants"
+    },
+    {
+      "@id": "brdffo:C_LZTO",
+      "@type": "bont:FlowObject",
+      "label": "Lead; zinc and tin ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_LZTP",
+      "@type": "bont:FlowObject",
+      "label": "Lead; zinc and tin and products thereof"
+    },
+    {
+      "@id": "brdffo:C_LZTW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary lead for treatment; Re-processing of secondary lead into new lead"
+    },
+    {
+      "@id": "brdffo:C_MACH",
+      "@type": "bont:FlowObject",
+      "label": "Machinery and equipment n.e.c. (29)"
+    },
+    {
+      "@id": "brdffo:C_MANB",
+      "@type": "bont:FlowObject",
+      "label": "Manure (biogas treatment)"
+    },
+    {
+      "@id": "brdffo:C_MANC",
+      "@type": "bont:FlowObject",
+      "label": "Manure (conventional treatment)"
+    },
+    {
+      "@id": "brdffo:C_MARE",
+      "@type": "bont:FlowObject",
+      "label": "Renting services of machinery and equipment without operator and of personal and household goods (71)"
+    },
+    {
+      "@id": "brdffo:C_MBFG",
+      "@type": "bont:FlowObject",
+      "label": "Blast Furnace Gas"
+    },
+    {
+      "@id": "brdffo:C_MBIO",
+      "@type": "bont:FlowObject",
+      "label": "Biogas"
+    },
+    {
+      "@id": "brdffo:C_MDIA",
+      "@type": "bont:FlowObject",
+      "label": "Printed matter and recorded media (22)"
+    },
+    {
+      "@id": "brdffo:C_MEIN",
+      "@type": "bont:FlowObject",
+      "label": "Medical; precision and optical instruments; watches and clocks (33)"
+    },
+    {
+      "@id": "brdffo:C_METC",
+      "@type": "bont:FlowObject",
+      "label": "Foundry work services"
+    },
+    {
+      "@id": "brdffo:C_MGSL",
+      "@type": "bont:FlowObject",
+      "label": "Motor Gasoline"
+    },
+    {
+      "@id": "brdffo:C_MGWG",
+      "@type": "bont:FlowObject",
+      "label": "Gas Works Gas"
+    },
+    {
+      "@id": "brdffo:C_MILK",
+      "@type": "bont:FlowObject",
+      "label": "Raw milk"
+    },
+    {
+      "@id": "brdffo:C_MOSG",
+      "@type": "bont:FlowObject",
+      "label": "Oxygen Steel Furnace Gas"
+    },
+    {
+      "@id": "brdffo:C_MOTO",
+      "@type": "bont:FlowObject",
+      "label": "Motor vehicles; trailers and semi-trailers (34)"
+    },
+    {
+      "@id": "brdffo:C_NAPT",
+      "@type": "bont:FlowObject",
+      "label": "Naphtha"
+    },
+    {
+      "@id": "brdffo:C_NFER",
+      "@type": "bont:FlowObject",
+      "label": "N-fertiliser"
+    },
+    {
+      "@id": "brdffo:C_NIKO",
+      "@type": "bont:FlowObject",
+      "label": "Nickel ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_NSPP",
+      "@type": "bont:FlowObject",
+      "label": "Non-specified Petroleum Products"
+    },
+    {
+      "@id": "brdffo:C_NUCF",
+      "@type": "bont:FlowObject",
+      "label": "Nuclear fuel"
+    },
+    {
+      "@id": "brdffo:C_OANP",
+      "@type": "bont:FlowObject",
+      "label": "Animal products nec"
+    },
+    {
+      "@id": "brdffo:C_OBIO",
+      "@type": "bont:FlowObject",
+      "label": "Other Liquid Biofuels"
+    },
+    {
+      "@id": "brdffo:C_OBUS",
+      "@type": "bont:FlowObject",
+      "label": "Other business services (74)"
+    },
+    {
+      "@id": "brdffo:C_OCER",
+      "@type": "bont:FlowObject",
+      "label": "Cereal grains nec"
+    },
+    {
+      "@id": "brdffo:C_OFMA",
+      "@type": "bont:FlowObject",
+      "label": "Office machinery and computers (30)"
+    },
+    {
+      "@id": "brdffo:C_OFOD",
+      "@type": "bont:FlowObject",
+      "label": "Food products nec"
+    },
+    {
+      "@id": "brdffo:C_OGPL",
+      "@type": "bont:FlowObject",
+      "label": "Other Hydrocarbons"
+    },
+    {
+      "@id": "brdffo:C_OILS",
+      "@type": "bont:FlowObject",
+      "label": "Oil seeds"
+    },
+    {
+      "@id": "brdffo:C_OMEA",
+      "@type": "bont:FlowObject",
+      "label": "Meat animals nec"
+    },
+    {
+      "@id": "brdffo:C_ONFM",
+      "@type": "bont:FlowObject",
+      "label": "Other non-ferrous metal products"
+    },
+    {
+      "@id": "brdffo:C_ONFO",
+      "@type": "bont:FlowObject",
+      "label": "Other non-ferrous metal ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_ONFW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary other non-ferrous metals for treatment; Re-processing of secondary other non-ferrous metals into new other non-ferrous metals"
+    },
+    {
+      "@id": "brdffo:C_ONMM",
+      "@type": "bont:FlowObject",
+      "label": "Other non-metallic mineral products"
+    },
+    {
+      "@id": "brdffo:C_ORAN",
+      "@type": "bont:FlowObject",
+      "label": "Uranium and thorium ores (12)"
+    },
+    {
+      "@id": "brdffo:C_ORGA",
+      "@type": "bont:FlowObject",
+      "label": "Membership organisation services n.e.c. (91)"
+    },
+    {
+      "@id": "brdffo:C_OSER",
+      "@type": "bont:FlowObject",
+      "label": "Other services (93)"
+    },
+    {
+      "@id": "brdffo:C_OTBC",
+      "@type": "bont:FlowObject",
+      "label": "Other Bituminous Coal"
+    },
+    {
+      "@id": "brdffo:C_OTCR",
+      "@type": "bont:FlowObject",
+      "label": "Crops nec"
+    },
+    {
+      "@id": "brdffo:C_OTRE",
+      "@type": "bont:FlowObject",
+      "label": "Other transport equipment (35)"
+    },
+    {
+      "@id": "brdffo:C_PADF",
+      "@type": "bont:FlowObject",
+      "label": "Public administration and defence services; compulsory social security services (75)"
+    },
+    {
+      "@id": "brdffo:C_PAPE",
+      "@type": "bont:FlowObject",
+      "label": "Paper and paper products"
+    },
+    {
+      "@id": "brdffo:C_PAPR",
+      "@type": "bont:FlowObject",
+      "label": "Secondary paper for treatment; Re-processing of secondary paper into new pulp"
+    },
+    {
+      "@id": "brdffo:C_PARI",
+      "@type": "bont:FlowObject",
+      "label": "Paddy rice"
+    },
+    {
+      "@id": "brdffo:C_PARW",
+      "@type": "bont:FlowObject",
+      "label": "Paraffin Waxes"
+    },
+    {
+      "@id": "brdffo:C_PATF",
+      "@type": "bont:FlowObject",
+      "label": "Patent Fuel"
+    },
+    {
+      "@id": "brdffo:C_PCAT",
+      "@type": "bont:FlowObject",
+      "label": "Products of meat cattle"
+    },
+    {
+      "@id": "brdffo:C_PEAT",
+      "@type": "bont:FlowObject",
+      "label": "Peat"
+    },
+    {
+      "@id": "brdffo:C_PETC",
+      "@type": "bont:FlowObject",
+      "label": "Petroleum Coke"
+    },
+    {
+      "@id": "brdffo:C_PFER",
+      "@type": "bont:FlowObject",
+      "label": "P- and other fertiliser"
+    },
+    {
+      "@id": "brdffo:C_PIGS",
+      "@type": "bont:FlowObject",
+      "label": "Pigs"
+    },
+    {
+      "@id": "brdffo:C_PLAS",
+      "@type": "bont:FlowObject",
+      "label": "Plastics; basic"
+    },
+    {
+      "@id": "brdffo:C_PLAW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary plastic for treatment; Re-processing of secondary plastic into new plastic"
+    },
+    {
+      "@id": "brdffo:C_PLTR",
+      "@type": "bont:FlowObject",
+      "label": "Poultry"
+    },
+    {
+      "@id": "brdffo:C_POME",
+      "@type": "bont:FlowObject",
+      "label": "Meat products nec"
+    },
+    {
+      "@id": "brdffo:C_POWB",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by biomass and waste"
+    },
+    {
+      "@id": "brdffo:C_POWC",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by coal"
+    },
+    {
+      "@id": "brdffo:C_POWD",
+      "@type": "bont:FlowObject",
+      "label": "Distribution and trade services of electricity"
+    },
+    {
+      "@id": "brdffo:C_POWE",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by solar thermal"
+    },
+    {
+      "@id": "brdffo:C_POWG",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by gas"
+    },
+    {
+      "@id": "brdffo:C_POWH",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by hydro"
+    },
+    {
+      "@id": "brdffo:C_POWM",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by Geothermal"
+    },
+    {
+      "@id": "brdffo:C_POWN",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by nuclear"
+    },
+    {
+      "@id": "brdffo:C_POWO",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by tide; wave; ocean"
+    },
+    {
+      "@id": "brdffo:C_POWP",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by petroleum and other oil derivatives"
+    },
+    {
+      "@id": "brdffo:C_POWS",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by solar photovoltaic"
+    },
+    {
+      "@id": "brdffo:C_POWT",
+      "@type": "bont:FlowObject",
+      "label": "Transmission services of electricity"
+    },
+    {
+      "@id": "brdffo:C_POWW",
+      "@type": "bont:FlowObject",
+      "label": "Electricity by wind"
+    },
+    {
+      "@id": "brdffo:C_POWZ",
+      "@type": "bont:FlowObject",
+      "label": "Electricity nec"
+    },
+    {
+      "@id": "brdffo:C_PPIG",
+      "@type": "bont:FlowObject",
+      "label": "Products of meat pigs"
+    },
+    {
+      "@id": "brdffo:C_PPLT",
+      "@type": "bont:FlowObject",
+      "label": "Products of meat poultry"
+    },
+    {
+      "@id": "brdffo:C_PREM",
+      "@type": "bont:FlowObject",
+      "label": "Precious metals"
+    },
+    {
+      "@id": "brdffo:C_PREO",
+      "@type": "bont:FlowObject",
+      "label": "Precious metal ores and concentrates"
+    },
+    {
+      "@id": "brdffo:C_PREW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary preciuos metals for treatment; Re-processing of secondary preciuos metals into new preciuos metals"
+    },
+    {
+      "@id": "brdffo:C_PRHH",
+      "@type": "bont:FlowObject",
+      "label": "Private households with employed persons (95)"
+    },
+    {
+      "@id": "brdffo:C_PTEL",
+      "@type": "bont:FlowObject",
+      "label": "Post and telecommunication services (64)"
+    },
+    {
+      "@id": "brdffo:C_PULP",
+      "@type": "bont:FlowObject",
+      "label": "Pulp"
+    },
+    {
+      "@id": "brdffo:C_RATV",
+      "@type": "bont:FlowObject",
+      "label": "Radio; television and communication equipment and apparatus (32)"
+    },
+    {
+      "@id": "brdffo:C_REAL",
+      "@type": "bont:FlowObject",
+      "label": "Real estate services (70)"
+    },
+    {
+      "@id": "brdffo:C_RECR",
+      "@type": "bont:FlowObject",
+      "label": "Recreational; cultural and sporting services (92)"
+    },
+    {
+      "@id": "brdffo:C_REFF",
+      "@type": "bont:FlowObject",
+      "label": "Refinery Feedstocks"
+    },
+    {
+      "@id": "brdffo:C_RESD",
+      "@type": "bont:FlowObject",
+      "label": "Research and development services (73)"
+    },
+    {
+      "@id": "brdffo:C_RGAS",
+      "@type": "bont:FlowObject",
+      "label": "Refinery Gas"
+    },
+    {
+      "@id": "brdffo:C_RICE",
+      "@type": "bont:FlowObject",
+      "label": "Processed rice"
+    },
+    {
+      "@id": "brdffo:C_RUBP",
+      "@type": "bont:FlowObject",
+      "label": "Rubber and plastic products (25)"
+    },
+    {
+      "@id": "brdffo:C_RYMS",
+      "@type": "bont:FlowObject",
+      "label": "Secondary raw materials"
+    },
+    {
+      "@id": "brdffo:C_SDCL",
+      "@type": "bont:FlowObject",
+      "label": "Sand and clay"
+    },
+    {
+      "@id": "brdffo:C_STEL",
+      "@type": "bont:FlowObject",
+      "label": "Basic iron and steel and of ferro-alloys and first products thereof"
+    },
+    {
+      "@id": "brdffo:C_STEW",
+      "@type": "bont:FlowObject",
+      "label": "Secondary steel for treatment; Re-processing of secondary steel into new steel"
+    },
+    {
+      "@id": "brdffo:C_STON",
+      "@type": "bont:FlowObject",
+      "label": "Stone"
+    },
+    {
+      "@id": "brdffo:C_SUBC",
+      "@type": "bont:FlowObject",
+      "label": "Sub-Bituminous Coal"
+    },
+    {
+      "@id": "brdffo:C_SUGB",
+      "@type": "bont:FlowObject",
+      "label": "Sugar cane; sugar beet"
+    },
+    {
+      "@id": "brdffo:C_SUGR",
+      "@type": "bont:FlowObject",
+      "label": "Sugar"
+    },
+    {
+      "@id": "brdffo:C_TAIR",
+      "@type": "bont:FlowObject",
+      "label": "Air transport services (62)"
+    },
+    {
+      "@id": "brdffo:C_TAUX",
+      "@type": "bont:FlowObject",
+      "label": "Supporting and auxiliary transport services; travel agency services (63)"
+    },
+    {
+      "@id": "brdffo:C_TDFU",
+      "@type": "bont:FlowObject",
+      "label": "Retail trade services of motor fuel"
+    },
+    {
+      "@id": "brdffo:C_TDMO",
+      "@type": "bont:FlowObject",
+      "label": "Sale; maintenance; repair of motor vehicles; motor vehicles parts; motorcycles; motor cycles parts and accessoiries"
+    },
+    {
+      "@id": "brdffo:C_TDRT",
+      "@type": "bont:FlowObject",
+      "label": "Retail  trade services; except of motor vehicles and motorcycles; repair services of personal and household goods (52)"
+    },
+    {
+      "@id": "brdffo:C_TDWH",
+      "@type": "bont:FlowObject",
+      "label": "Wholesale trade and commission trade services; except of motor vehicles and motorcycles (51)"
+    },
+    {
+      "@id": "brdffo:C_TEXT",
+      "@type": "bont:FlowObject",
+      "label": "Textiles (17)"
+    },
+    {
+      "@id": "brdffo:C_TLND",
+      "@type": "bont:FlowObject",
+      "label": "Other land transportation services"
+    },
+    {
+      "@id": "brdffo:C_TOBC",
+      "@type": "bont:FlowObject",
+      "label": "Tobacco products (16)"
+    },
+    {
+      "@id": "brdffo:C_TPIP",
+      "@type": "bont:FlowObject",
+      "label": "Transportation services via pipelines"
+    },
+    {
+      "@id": "brdffo:C_TRAI",
+      "@type": "bont:FlowObject",
+      "label": "Railway transportation services"
+    },
+    {
+      "@id": "brdffo:C_TWAI",
+      "@type": "bont:FlowObject",
+      "label": "Inland water transportation services"
+    },
+    {
+      "@id": "brdffo:C_TWAS",
+      "@type": "bont:FlowObject",
+      "label": "Sea and coastal water transportation services"
+    },
+    {
+      "@id": "brdffo:C_VOIL",
+      "@type": "bont:FlowObject",
+      "label": "products of Vegetable oils and fats"
+    },
+    {
+      "@id": "brdffo:C_WASF",
+      "@type": "bont:FlowObject",
+      "label": "Food waste for treatment: waste water treatment"
+    },
+    {
+      "@id": "brdffo:C_WASO",
+      "@type": "bont:FlowObject",
+      "label": "Other waste for treatment: waste water treatment"
+    },
+    {
+      "@id": "brdffo:C_WATR",
+      "@type": "bont:FlowObject",
+      "label": "Collected and purified water; distribution services of water (41)"
+    },
+    {
+      "@id": "brdffo:C_WHEA",
+      "@type": "bont:FlowObject",
+      "label": "Wheat"
+    },
+    {
+      "@id": "brdffo:C_WHSP",
+      "@type": "bont:FlowObject",
+      "label": "White Spirit & SBP"
+    },
+    {
+      "@id": "brdffo:C_WOOD",
+      "@type": "bont:FlowObject",
+      "label": "Wood and products of wood and cork (except furniture); articles of straw and plaiting materials (20)"
+    },
+    {
+      "@id": "brdffo:C_WOOL",
+      "@type": "bont:FlowObject",
+      "label": "Wool; silk-worm cocoons"
+    },
+    {
+      "@id": "brdffo:C_WOOW",
+      "@type": "bont:FlowObject",
+      "label": "Wood material for treatment; Re-processing of secondary wood material into new wood material"
+    }
+  ]
+}

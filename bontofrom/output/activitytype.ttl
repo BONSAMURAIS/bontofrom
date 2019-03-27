@@ -1,0 +1,330 @@
+@prefix bont:  <http://ontology.bonsai.uno/core#> .
+@prefix brdfat:  <http://rdf.bonsai.uno/activitytype/exiobase3_3_17/> .
+
+brdfat:A_ALUM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ALUO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ALUW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ASHW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BEVR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BIOF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BIOP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BIOS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BOTW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_BRIK  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CATL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CHEM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CHMF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CMNT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COAL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COKE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COMF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COMP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COMW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CONS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CONW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COPO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COPP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_COPW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_CRMC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_DAIR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_EDUC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ELMA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_EXTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FABM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FAUX  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FIBR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FINS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FINT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FISH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FORE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FSHP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FURN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_FVEG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_GARM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_GASD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_GASE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_GLAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_GLAW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_HEAL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_HORE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_HWAT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_INCW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_IRON  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LANW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LETH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LZTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LZTP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_LZTW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MACH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MANB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MANC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MARE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MDIA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MEIN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_METC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MGWG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MILK  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_MOTO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_NFER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_NIKO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_NUCF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OANP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OBUS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OCER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OFMA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OFOD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OGPL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OILS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OMEA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ONFM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ONFO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ONFW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ONMM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ORAN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_ORGA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OSER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OTCR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_OTRE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PADF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PAPE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PAPR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PARI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PCAT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PFER  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PIGS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PLAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PLAW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PLTR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POME  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_POWZ  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PPIG  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PPLT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PREM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PREO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PREW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PRHH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PTEL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_PULP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RATV  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_REAL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RECR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_REFN  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RESD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RICE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RUBP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_RYMS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_SDCL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_STEL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_STEW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_STON  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_SUGB  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_SUGR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TAIR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TAUX  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TDFU  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TDMO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TDRT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TDWH  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TEXT  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TLND  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TOBC  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TPIP  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TRAI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TWAI  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_TWAS  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_VOIL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WASF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WASO  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WATR  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WHEA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WOOD  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WOOL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
+
+brdfat:A_WOOW  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  bont:ActivityType .
