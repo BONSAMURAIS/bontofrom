@@ -1,5 +1,5 @@
 import json
-from .load_metadata import metadata
+from bontofrom.load_metadata import metadata
 
 s = lambda x: x.replace("http://rdf.bonsai.uno/activitytype/exiobase3_3_17/", "brdfat:")
 
@@ -18,6 +18,7 @@ for name, uri in metadata['activity type'].items():
         "label": name,
     })
 
-
 with open("activitytype.jsonld", "w", encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Convert to TTL:\ndocker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle activitytype.jsonld > activitytype.ttl")

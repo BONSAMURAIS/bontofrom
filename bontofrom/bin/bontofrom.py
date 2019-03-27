@@ -12,7 +12,7 @@ Options:
 
 """
 from docopt import docopt
-from bontofrom.worker import run
+# from bontofrom.worker import run
 import sys
 
 
