@@ -41,6 +41,7 @@ setup(
     },
     install_requires=[
         'docopt',
+        'requests',
     ],
     url="https://github.com/BONSAMURAIS/bontofrom",
     long_description=open('README.md').read(),
