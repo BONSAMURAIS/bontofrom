@@ -1,17 +1,19 @@
 import json
 from .load_metadata import metadata
 
+s = lambda x: x.replace("http://rdf.bonsai.uno/activitytype/exiobase3_3_17/", "brdfat:")
+
 data = {
     "@context": {
         "bont" : "http://ontology.bonsai.uno/core#",
-        "brdfat" : "http://rdf.bonsai.uno/activitytype/#",
+        "brdfat" : "http://rdf.bonsai.uno/activitytype/exiobase3_3_17/",
     },
     "@graph": []
 }
 
 for name, uri in metadata['activity type'].items():
     data['@graph'].append({
-        '@id': uri,
+        '@id': s(uri),
         "@type" : "bont:ActivityType",
         "label": name,
     })

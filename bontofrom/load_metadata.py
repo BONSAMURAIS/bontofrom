@@ -5,19 +5,21 @@ metadata_dir = Path(__file__).parent / "meta"
 
 metadata = {}
 
+_ = lambda x: x if x.startswith("http://") else "http://" + x
+
 with open(metadata_dir / "exiobase_activitytype_URIs.csv", "r", encoding='utf-8') as f:
     reader = csv.reader(f)
     # Skip header
     next(reader)
-    metadata['activity type'] = {row[0]: row[3] for row in reader if row}
+    metadata['activity type'] = {row[0]: _(row[3]) for row in reader if row}
 
 with open(metadata_dir / "exiobase_flowobject_URIs.csv", "r", encoding='utf-8') as f:
     reader = csv.reader(f)
     # Skip header
     next(reader)
-    metadata['flow objects'] = {row[0]: row[3] for row in reader if row}
+    metadata['flow objects'] = {row[0]: _(row[3]) for row in reader if row}
 
-get_location = lambda l: (l[0], l[1]) if l[1] else (l[0], l[2])
+get_location = lambda l: (l[0], _(l[1])) if l[1] else (l[0], _(l[2]))
 
 with open(metadata_dir / "exiobase_location_URIs.csv", "r", encoding='utf-8') as f:
     reader = csv.reader(f)
