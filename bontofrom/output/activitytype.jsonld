@@ -1,828 +1,829 @@
 {
   "@context": {
     "bont": "http://ontology.bonsai.uno/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "brdfat": "http://rdf.bonsai.uno/activitytype/exiobase3_3_17/"
   },
   "@graph": [
     {
       "@id": "brdfat:A_ALUM",
       "@type": "bont:ActivityType",
-      "label": "Aluminium production"
+      "rdfs:label": "Aluminium production"
     },
     {
       "@id": "brdfat:A_ALUO",
       "@type": "bont:ActivityType",
-      "label": "Mining of aluminium ores and concentrates"
+      "rdfs:label": "Mining of aluminium ores and concentrates"
     },
     {
       "@id": "brdfat:A_ALUW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary aluminium into new aluminium"
+      "rdfs:label": "Re-processing of secondary aluminium into new aluminium"
     },
     {
       "@id": "brdfat:A_ASHW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of ash into clinker"
+      "rdfs:label": "Re-processing of ash into clinker"
     },
     {
       "@id": "brdfat:A_BEVR",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of beverages"
+      "rdfs:label": "Manufacture of beverages"
     },
     {
       "@id": "brdfat:A_BIOF",
       "@type": "bont:ActivityType",
-      "label": "Biogasification of food waste, incl. land application"
+      "rdfs:label": "Biogasification of food waste, incl. land application"
     },
     {
       "@id": "brdfat:A_BIOP",
       "@type": "bont:ActivityType",
-      "label": "Biogasification of paper, incl. land application"
+      "rdfs:label": "Biogasification of paper, incl. land application"
     },
     {
       "@id": "brdfat:A_BIOS",
       "@type": "bont:ActivityType",
-      "label": "Biogasification of sewage slugde, incl. land application"
+      "rdfs:label": "Biogasification of sewage slugde, incl. land application"
     },
     {
       "@id": "brdfat:A_BOTW",
       "@type": "bont:ActivityType",
-      "label": "Recycling of bottles by direct reuse"
+      "rdfs:label": "Recycling of bottles by direct reuse"
     },
     {
       "@id": "brdfat:A_BRIK",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of bricks, tiles and construction products, in baked clay"
+      "rdfs:label": "Manufacture of bricks, tiles and construction products, in baked clay"
     },
     {
       "@id": "brdfat:A_CATL",
       "@type": "bont:ActivityType",
-      "label": "Cattle farming"
+      "rdfs:label": "Cattle farming"
     },
     {
       "@id": "brdfat:A_CHEM",
       "@type": "bont:ActivityType",
-      "label": "Chemicals nec"
+      "rdfs:label": "Chemicals nec"
     },
     {
       "@id": "brdfat:A_CHMF",
       "@type": "bont:ActivityType",
-      "label": "Mining of chemical and fertilizer minerals, production of salt, other mining and quarrying n.e.c."
+      "rdfs:label": "Mining of chemical and fertilizer minerals, production of salt, other mining and quarrying n.e.c."
     },
     {
       "@id": "brdfat:A_CMNT",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of cement, lime and plaster"
+      "rdfs:label": "Manufacture of cement, lime and plaster"
     },
     {
       "@id": "brdfat:A_COAL",
       "@type": "bont:ActivityType",
-      "label": "Mining of coal and lignite; extraction of peat (10)"
+      "rdfs:label": "Mining of coal and lignite; extraction of peat (10)"
     },
     {
       "@id": "brdfat:A_COIL",
       "@type": "bont:ActivityType",
-      "label": "Extraction of crude petroleum and services related to crude oil extraction, excluding surveying"
+      "rdfs:label": "Extraction of crude petroleum and services related to crude oil extraction, excluding surveying"
     },
     {
       "@id": "brdfat:A_COKE",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of coke oven products"
+      "rdfs:label": "Manufacture of coke oven products"
     },
     {
       "@id": "brdfat:A_COMF",
       "@type": "bont:ActivityType",
-      "label": "Composting of food waste, incl. land application"
+      "rdfs:label": "Composting of food waste, incl. land application"
     },
     {
       "@id": "brdfat:A_COMP",
       "@type": "bont:ActivityType",
-      "label": "Computer and related activities (72)"
+      "rdfs:label": "Computer and related activities (72)"
     },
     {
       "@id": "brdfat:A_COMW",
       "@type": "bont:ActivityType",
-      "label": "Composting of paper and wood, incl. land application"
+      "rdfs:label": "Composting of paper and wood, incl. land application"
     },
     {
       "@id": "brdfat:A_CONS",
       "@type": "bont:ActivityType",
-      "label": "Construction (45)"
+      "rdfs:label": "Construction (45)"
     },
     {
       "@id": "brdfat:A_CONW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary construction material into aggregates"
+      "rdfs:label": "Re-processing of secondary construction material into aggregates"
     },
     {
       "@id": "brdfat:A_COPO",
       "@type": "bont:ActivityType",
-      "label": "Mining of copper ores and concentrates"
+      "rdfs:label": "Mining of copper ores and concentrates"
     },
     {
       "@id": "brdfat:A_COPP",
       "@type": "bont:ActivityType",
-      "label": "Copper production"
+      "rdfs:label": "Copper production"
     },
     {
       "@id": "brdfat:A_COPW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary copper into new copper"
+      "rdfs:label": "Re-processing of secondary copper into new copper"
     },
     {
       "@id": "brdfat:A_CRMC",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of ceramic goods"
+      "rdfs:label": "Manufacture of ceramic goods"
     },
     {
       "@id": "brdfat:A_DAIR",
       "@type": "bont:ActivityType",
-      "label": "Processing of dairy products"
+      "rdfs:label": "Processing of dairy products"
     },
     {
       "@id": "brdfat:A_EDUC",
       "@type": "bont:ActivityType",
-      "label": "Education (80)"
+      "rdfs:label": "Education (80)"
     },
     {
       "@id": "brdfat:A_ELMA",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of electrical machinery and apparatus n.e.c. (31)"
+      "rdfs:label": "Manufacture of electrical machinery and apparatus n.e.c. (31)"
     },
     {
       "@id": "brdfat:A_EXTO",
       "@type": "bont:ActivityType",
-      "label": "Extra-territorial organizations and bodies"
+      "rdfs:label": "Extra-territorial organizations and bodies"
     },
     {
       "@id": "brdfat:A_FABM",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of fabricated metal products, except machinery and equipment (28)"
+      "rdfs:label": "Manufacture of fabricated metal products, except machinery and equipment (28)"
     },
     {
       "@id": "brdfat:A_FAUX",
       "@type": "bont:ActivityType",
-      "label": "Activities auxiliary to financial intermediation (67)"
+      "rdfs:label": "Activities auxiliary to financial intermediation (67)"
     },
     {
       "@id": "brdfat:A_FIBR",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of plant-based fibers"
+      "rdfs:label": "Cultivation of plant-based fibers"
     },
     {
       "@id": "brdfat:A_FINS",
       "@type": "bont:ActivityType",
-      "label": "Insurance and pension funding, except compulsory social security (66)"
+      "rdfs:label": "Insurance and pension funding, except compulsory social security (66)"
     },
     {
       "@id": "brdfat:A_FINT",
       "@type": "bont:ActivityType",
-      "label": "Financial intermediation, except insurance and pension funding (65)"
+      "rdfs:label": "Financial intermediation, except insurance and pension funding (65)"
     },
     {
       "@id": "brdfat:A_FISH",
       "@type": "bont:ActivityType",
-      "label": "Fishing, operating of fish hatcheries and fish farms; service activities incidental to fishing (05)"
+      "rdfs:label": "Fishing, operating of fish hatcheries and fish farms; service activities incidental to fishing (05)"
     },
     {
       "@id": "brdfat:A_FORE",
       "@type": "bont:ActivityType",
-      "label": "Forestry, logging and related service activities (02)"
+      "rdfs:label": "Forestry, logging and related service activities (02)"
     },
     {
       "@id": "brdfat:A_FSHP",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of fish products"
+      "rdfs:label": "Manufacture of fish products"
     },
     {
       "@id": "brdfat:A_FURN",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of furniture; manufacturing n.e.c. (36)"
+      "rdfs:label": "Manufacture of furniture; manufacturing n.e.c. (36)"
     },
     {
       "@id": "brdfat:A_FVEG",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of vegetables, fruit, nuts"
+      "rdfs:label": "Cultivation of vegetables, fruit, nuts"
     },
     {
       "@id": "brdfat:A_GARM",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of wearing apparel; dressing and dyeing of fur (18)"
+      "rdfs:label": "Manufacture of wearing apparel; dressing and dyeing of fur (18)"
     },
     {
       "@id": "brdfat:A_GASD",
       "@type": "bont:ActivityType",
-      "label": "Distribution of gaseous fuels through mains"
+      "rdfs:label": "Distribution of gaseous fuels through mains"
     },
     {
       "@id": "brdfat:A_GASE",
       "@type": "bont:ActivityType",
-      "label": "Extraction of natural gas and services related to natural gas extraction, excluding surveying"
+      "rdfs:label": "Extraction of natural gas and services related to natural gas extraction, excluding surveying"
     },
     {
       "@id": "brdfat:A_GLAS",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of glass and glass products"
+      "rdfs:label": "Manufacture of glass and glass products"
     },
     {
       "@id": "brdfat:A_GLAW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary glass into new glass"
+      "rdfs:label": "Re-processing of secondary glass into new glass"
     },
     {
       "@id": "brdfat:A_HEAL",
       "@type": "bont:ActivityType",
-      "label": "Health and social work (85)"
+      "rdfs:label": "Health and social work (85)"
     },
     {
       "@id": "brdfat:A_HORE",
       "@type": "bont:ActivityType",
-      "label": "Hotels and restaurants (55)"
+      "rdfs:label": "Hotels and restaurants (55)"
     },
     {
       "@id": "brdfat:A_HWAT",
       "@type": "bont:ActivityType",
-      "label": "Steam and hot water supply"
+      "rdfs:label": "Steam and hot water supply"
     },
     {
       "@id": "brdfat:A_INCF",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Food"
+      "rdfs:label": "Incineration of waste: Food"
     },
     {
       "@id": "brdfat:A_INCL",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Plastic"
+      "rdfs:label": "Incineration of waste: Plastic"
     },
     {
       "@id": "brdfat:A_INCM",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Metals and Inert materials"
+      "rdfs:label": "Incineration of waste: Metals and Inert materials"
     },
     {
       "@id": "brdfat:A_INCO",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Oil/Hazardous waste"
+      "rdfs:label": "Incineration of waste: Oil/Hazardous waste"
     },
     {
       "@id": "brdfat:A_INCP",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Paper"
+      "rdfs:label": "Incineration of waste: Paper"
     },
     {
       "@id": "brdfat:A_INCT",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Textiles"
+      "rdfs:label": "Incineration of waste: Textiles"
     },
     {
       "@id": "brdfat:A_INCW",
       "@type": "bont:ActivityType",
-      "label": "Incineration of waste: Wood"
+      "rdfs:label": "Incineration of waste: Wood"
     },
     {
       "@id": "brdfat:A_IRON",
       "@type": "bont:ActivityType",
-      "label": "Mining of iron ores"
+      "rdfs:label": "Mining of iron ores"
     },
     {
       "@id": "brdfat:A_LANF",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Food"
+      "rdfs:label": "Landfill of waste: Food"
     },
     {
       "@id": "brdfat:A_LANI",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Inert/metal/hazardous"
+      "rdfs:label": "Landfill of waste: Inert/metal/hazardous"
     },
     {
       "@id": "brdfat:A_LANL",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Plastic"
+      "rdfs:label": "Landfill of waste: Plastic"
     },
     {
       "@id": "brdfat:A_LANP",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Paper"
+      "rdfs:label": "Landfill of waste: Paper"
     },
     {
       "@id": "brdfat:A_LANT",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Textiles"
+      "rdfs:label": "Landfill of waste: Textiles"
     },
     {
       "@id": "brdfat:A_LANW",
       "@type": "bont:ActivityType",
-      "label": "Landfill of waste: Wood"
+      "rdfs:label": "Landfill of waste: Wood"
     },
     {
       "@id": "brdfat:A_LETH",
       "@type": "bont:ActivityType",
-      "label": "Tanning and dressing of leather; manufacture of luggage, handbags, saddlery, harness and footwear (19)"
+      "rdfs:label": "Tanning and dressing of leather; manufacture of luggage, handbags, saddlery, harness and footwear (19)"
     },
     {
       "@id": "brdfat:A_LZTO",
       "@type": "bont:ActivityType",
-      "label": "Mining of lead, zinc and tin ores and concentrates"
+      "rdfs:label": "Mining of lead, zinc and tin ores and concentrates"
     },
     {
       "@id": "brdfat:A_LZTP",
       "@type": "bont:ActivityType",
-      "label": "Lead, zinc and tin production"
+      "rdfs:label": "Lead, zinc and tin production"
     },
     {
       "@id": "brdfat:A_LZTW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary lead into new lead"
+      "rdfs:label": "Re-processing of secondary lead into new lead"
     },
     {
       "@id": "brdfat:A_MACH",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of machinery and equipment n.e.c. (29)"
+      "rdfs:label": "Manufacture of machinery and equipment n.e.c. (29)"
     },
     {
       "@id": "brdfat:A_MANB",
       "@type": "bont:ActivityType",
-      "label": "Manure treatment (biogas), storage and land application"
+      "rdfs:label": "Manure treatment (biogas), storage and land application"
     },
     {
       "@id": "brdfat:A_MANC",
       "@type": "bont:ActivityType",
-      "label": "Manure treatment (conventional), storage and land application"
+      "rdfs:label": "Manure treatment (conventional), storage and land application"
     },
     {
       "@id": "brdfat:A_MARE",
       "@type": "bont:ActivityType",
-      "label": "Renting of machinery and equipment without operator and of personal and household goods (71)"
+      "rdfs:label": "Renting of machinery and equipment without operator and of personal and household goods (71)"
     },
     {
       "@id": "brdfat:A_MDIA",
       "@type": "bont:ActivityType",
-      "label": "Publishing, printing and reproduction of recorded media (22)"
+      "rdfs:label": "Publishing, printing and reproduction of recorded media (22)"
     },
     {
       "@id": "brdfat:A_MEIN",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of medical, precision and optical instruments, watches and clocks (33)"
+      "rdfs:label": "Manufacture of medical, precision and optical instruments, watches and clocks (33)"
     },
     {
       "@id": "brdfat:A_METC",
       "@type": "bont:ActivityType",
-      "label": "Casting of metals"
+      "rdfs:label": "Casting of metals"
     },
     {
       "@id": "brdfat:A_MGWG",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of gas;"
+      "rdfs:label": "Manufacture of gas;"
     },
     {
       "@id": "brdfat:A_MILK",
       "@type": "bont:ActivityType",
-      "label": "Raw milk"
+      "rdfs:label": "Raw milk"
     },
     {
       "@id": "brdfat:A_MOTO",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of motor vehicles, trailers and semi-trailers (34)"
+      "rdfs:label": "Manufacture of motor vehicles, trailers and semi-trailers (34)"
     },
     {
       "@id": "brdfat:A_NFER",
       "@type": "bont:ActivityType",
-      "label": "N-fertiliser"
+      "rdfs:label": "N-fertiliser"
     },
     {
       "@id": "brdfat:A_NIKO",
       "@type": "bont:ActivityType",
-      "label": "Mining of nickel ores and concentrates"
+      "rdfs:label": "Mining of nickel ores and concentrates"
     },
     {
       "@id": "brdfat:A_NUCF",
       "@type": "bont:ActivityType",
-      "label": "Processing of nuclear fuel"
+      "rdfs:label": "Processing of nuclear fuel"
     },
     {
       "@id": "brdfat:A_OANP",
       "@type": "bont:ActivityType",
-      "label": "Animal products nec"
+      "rdfs:label": "Animal products nec"
     },
     {
       "@id": "brdfat:A_OBUS",
       "@type": "bont:ActivityType",
-      "label": "Other business activities (74)"
+      "rdfs:label": "Other business activities (74)"
     },
     {
       "@id": "brdfat:A_OCER",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of cereal grains nec"
+      "rdfs:label": "Cultivation of cereal grains nec"
     },
     {
       "@id": "brdfat:A_OFMA",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of office machinery and computers (30)"
+      "rdfs:label": "Manufacture of office machinery and computers (30)"
     },
     {
       "@id": "brdfat:A_OFOD",
       "@type": "bont:ActivityType",
-      "label": "Processing of Food products nec"
+      "rdfs:label": "Processing of Food products nec"
     },
     {
       "@id": "brdfat:A_OGPL",
       "@type": "bont:ActivityType",
-      "label": "Extraction, liquefaction, and regasification of other petroleum and gaseous materials"
+      "rdfs:label": "Extraction, liquefaction, and regasification of other petroleum and gaseous materials"
     },
     {
       "@id": "brdfat:A_OILS",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of oil seeds"
+      "rdfs:label": "Cultivation of oil seeds"
     },
     {
       "@id": "brdfat:A_OMEA",
       "@type": "bont:ActivityType",
-      "label": "Meat animals nec"
+      "rdfs:label": "Meat animals nec"
     },
     {
       "@id": "brdfat:A_ONFM",
       "@type": "bont:ActivityType",
-      "label": "Other non-ferrous metal production"
+      "rdfs:label": "Other non-ferrous metal production"
     },
     {
       "@id": "brdfat:A_ONFO",
       "@type": "bont:ActivityType",
-      "label": "Mining of other non-ferrous metal ores and concentrates"
+      "rdfs:label": "Mining of other non-ferrous metal ores and concentrates"
     },
     {
       "@id": "brdfat:A_ONFW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary other non-ferrous metals into new other non-ferrous metals"
+      "rdfs:label": "Re-processing of secondary other non-ferrous metals into new other non-ferrous metals"
     },
     {
       "@id": "brdfat:A_ONMM",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of other non-metallic mineral products n.e.c."
+      "rdfs:label": "Manufacture of other non-metallic mineral products n.e.c."
     },
     {
       "@id": "brdfat:A_ORAN",
       "@type": "bont:ActivityType",
-      "label": "Mining of uranium and thorium ores (12)"
+      "rdfs:label": "Mining of uranium and thorium ores (12)"
     },
     {
       "@id": "brdfat:A_ORGA",
       "@type": "bont:ActivityType",
-      "label": "Activities of membership organisation n.e.c. (91)"
+      "rdfs:label": "Activities of membership organisation n.e.c. (91)"
     },
     {
       "@id": "brdfat:A_OSER",
       "@type": "bont:ActivityType",
-      "label": "Other service activities (93)"
+      "rdfs:label": "Other service activities (93)"
     },
     {
       "@id": "brdfat:A_OTCR",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of crops nec"
+      "rdfs:label": "Cultivation of crops nec"
     },
     {
       "@id": "brdfat:A_OTRE",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of other transport equipment (35)"
+      "rdfs:label": "Manufacture of other transport equipment (35)"
     },
     {
       "@id": "brdfat:A_PADF",
       "@type": "bont:ActivityType",
-      "label": "Public administration and defence; compulsory social security (75)"
+      "rdfs:label": "Public administration and defence; compulsory social security (75)"
     },
     {
       "@id": "brdfat:A_PAPE",
       "@type": "bont:ActivityType",
-      "label": "Paper"
+      "rdfs:label": "Paper"
     },
     {
       "@id": "brdfat:A_PAPR",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary paper into new pulp"
+      "rdfs:label": "Re-processing of secondary paper into new pulp"
     },
     {
       "@id": "brdfat:A_PARI",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of paddy rice"
+      "rdfs:label": "Cultivation of paddy rice"
     },
     {
       "@id": "brdfat:A_PCAT",
       "@type": "bont:ActivityType",
-      "label": "Processing of meat cattle"
+      "rdfs:label": "Processing of meat cattle"
     },
     {
       "@id": "brdfat:A_PFER",
       "@type": "bont:ActivityType",
-      "label": "P- and other fertiliser"
+      "rdfs:label": "P- and other fertiliser"
     },
     {
       "@id": "brdfat:A_PIGS",
       "@type": "bont:ActivityType",
-      "label": "Pigs farming"
+      "rdfs:label": "Pigs farming"
     },
     {
       "@id": "brdfat:A_PLAS",
       "@type": "bont:ActivityType",
-      "label": "Plastics, basic"
+      "rdfs:label": "Plastics, basic"
     },
     {
       "@id": "brdfat:A_PLAW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary plastic into new plastic"
+      "rdfs:label": "Re-processing of secondary plastic into new plastic"
     },
     {
       "@id": "brdfat:A_PLTR",
       "@type": "bont:ActivityType",
-      "label": "Poultry farming"
+      "rdfs:label": "Poultry farming"
     },
     {
       "@id": "brdfat:A_POME",
       "@type": "bont:ActivityType",
-      "label": "Production of meat products nec"
+      "rdfs:label": "Production of meat products nec"
     },
     {
       "@id": "brdfat:A_POWB",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by biomass and waste"
+      "rdfs:label": "Production of electricity by biomass and waste"
     },
     {
       "@id": "brdfat:A_POWC",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by coal"
+      "rdfs:label": "Production of electricity by coal"
     },
     {
       "@id": "brdfat:A_POWD",
       "@type": "bont:ActivityType",
-      "label": "Distribution and trade of electricity"
+      "rdfs:label": "Distribution and trade of electricity"
     },
     {
       "@id": "brdfat:A_POWE",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by solar thermal"
+      "rdfs:label": "Production of electricity by solar thermal"
     },
     {
       "@id": "brdfat:A_POWG",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by gas"
+      "rdfs:label": "Production of electricity by gas"
     },
     {
       "@id": "brdfat:A_POWH",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by hydro"
+      "rdfs:label": "Production of electricity by hydro"
     },
     {
       "@id": "brdfat:A_POWM",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by Geothermal"
+      "rdfs:label": "Production of electricity by Geothermal"
     },
     {
       "@id": "brdfat:A_POWN",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by nuclear"
+      "rdfs:label": "Production of electricity by nuclear"
     },
     {
       "@id": "brdfat:A_POWO",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by tide, wave, ocean"
+      "rdfs:label": "Production of electricity by tide, wave, ocean"
     },
     {
       "@id": "brdfat:A_POWP",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by petroleum and other oil derivatives"
+      "rdfs:label": "Production of electricity by petroleum and other oil derivatives"
     },
     {
       "@id": "brdfat:A_POWS",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by solar photovoltaic"
+      "rdfs:label": "Production of electricity by solar photovoltaic"
     },
     {
       "@id": "brdfat:A_POWT",
       "@type": "bont:ActivityType",
-      "label": "Transmission of electricity"
+      "rdfs:label": "Transmission of electricity"
     },
     {
       "@id": "brdfat:A_POWW",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity by wind"
+      "rdfs:label": "Production of electricity by wind"
     },
     {
       "@id": "brdfat:A_POWZ",
       "@type": "bont:ActivityType",
-      "label": "Production of electricity nec"
+      "rdfs:label": "Production of electricity nec"
     },
     {
       "@id": "brdfat:A_PPIG",
       "@type": "bont:ActivityType",
-      "label": "Processing of meat pigs"
+      "rdfs:label": "Processing of meat pigs"
     },
     {
       "@id": "brdfat:A_PPLT",
       "@type": "bont:ActivityType",
-      "label": "Processing of meat poultry"
+      "rdfs:label": "Processing of meat poultry"
     },
     {
       "@id": "brdfat:A_PREM",
       "@type": "bont:ActivityType",
-      "label": "Precious metals production"
+      "rdfs:label": "Precious metals production"
     },
     {
       "@id": "brdfat:A_PREO",
       "@type": "bont:ActivityType",
-      "label": "Mining of precious metal ores and concentrates"
+      "rdfs:label": "Mining of precious metal ores and concentrates"
     },
     {
       "@id": "brdfat:A_PREW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary preciuos metals into new preciuos metals"
+      "rdfs:label": "Re-processing of secondary preciuos metals into new preciuos metals"
     },
     {
       "@id": "brdfat:A_PRHH",
       "@type": "bont:ActivityType",
-      "label": "Private households with employed persons (95)"
+      "rdfs:label": "Private households with employed persons (95)"
     },
     {
       "@id": "brdfat:A_PTEL",
       "@type": "bont:ActivityType",
-      "label": "Post and telecommunications (64)"
+      "rdfs:label": "Post and telecommunications (64)"
     },
     {
       "@id": "brdfat:A_PULP",
       "@type": "bont:ActivityType",
-      "label": "Pulp"
+      "rdfs:label": "Pulp"
     },
     {
       "@id": "brdfat:A_RATV",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of radio, television and communication equipment and apparatus (32)"
+      "rdfs:label": "Manufacture of radio, television and communication equipment and apparatus (32)"
     },
     {
       "@id": "brdfat:A_REAL",
       "@type": "bont:ActivityType",
-      "label": "Real estate activities (70)"
+      "rdfs:label": "Real estate activities (70)"
     },
     {
       "@id": "brdfat:A_RECR",
       "@type": "bont:ActivityType",
-      "label": "Recreational, cultural and sporting activities (92)"
+      "rdfs:label": "Recreational, cultural and sporting activities (92)"
     },
     {
       "@id": "brdfat:A_REFN",
       "@type": "bont:ActivityType",
-      "label": "Petroleum Refinery"
+      "rdfs:label": "Petroleum Refinery"
     },
     {
       "@id": "brdfat:A_RESD",
       "@type": "bont:ActivityType",
-      "label": "Research and development (73)"
+      "rdfs:label": "Research and development (73)"
     },
     {
       "@id": "brdfat:A_RICE",
       "@type": "bont:ActivityType",
-      "label": "Processed rice"
+      "rdfs:label": "Processed rice"
     },
     {
       "@id": "brdfat:A_RUBP",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of rubber and plastic products (25)"
+      "rdfs:label": "Manufacture of rubber and plastic products (25)"
     },
     {
       "@id": "brdfat:A_RYMS",
       "@type": "bont:ActivityType",
-      "label": "Recycling of waste and scrap"
+      "rdfs:label": "Recycling of waste and scrap"
     },
     {
       "@id": "brdfat:A_SDCL",
       "@type": "bont:ActivityType",
-      "label": "Quarrying of sand and clay"
+      "rdfs:label": "Quarrying of sand and clay"
     },
     {
       "@id": "brdfat:A_STEL",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of basic iron and steel and of ferro-alloys and first products thereof"
+      "rdfs:label": "Manufacture of basic iron and steel and of ferro-alloys and first products thereof"
     },
     {
       "@id": "brdfat:A_STEW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary steel into new steel"
+      "rdfs:label": "Re-processing of secondary steel into new steel"
     },
     {
       "@id": "brdfat:A_STON",
       "@type": "bont:ActivityType",
-      "label": "Quarrying of stone"
+      "rdfs:label": "Quarrying of stone"
     },
     {
       "@id": "brdfat:A_SUGB",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of sugar cane, sugar beet"
+      "rdfs:label": "Cultivation of sugar cane, sugar beet"
     },
     {
       "@id": "brdfat:A_SUGR",
       "@type": "bont:ActivityType",
-      "label": "Sugar refining"
+      "rdfs:label": "Sugar refining"
     },
     {
       "@id": "brdfat:A_TAIR",
       "@type": "bont:ActivityType",
-      "label": "Air transport (62)"
+      "rdfs:label": "Air transport (62)"
     },
     {
       "@id": "brdfat:A_TAUX",
       "@type": "bont:ActivityType",
-      "label": "Supporting and auxiliary transport activities; activities of travel agencies (63)"
+      "rdfs:label": "Supporting and auxiliary transport activities; activities of travel agencies (63)"
     },
     {
       "@id": "brdfat:A_TDFU",
       "@type": "bont:ActivityType",
-      "label": "Retail sale of automotive fuel"
+      "rdfs:label": "Retail sale of automotive fuel"
     },
     {
       "@id": "brdfat:A_TDMO",
       "@type": "bont:ActivityType",
-      "label": "Sale, maintenance, repair of motor vehicles, motor vehicles parts, motorcycles, motor cycles parts and accessoiries"
+      "rdfs:label": "Sale, maintenance, repair of motor vehicles, motor vehicles parts, motorcycles, motor cycles parts and accessoiries"
     },
     {
       "@id": "brdfat:A_TDRT",
       "@type": "bont:ActivityType",
-      "label": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods (52)"
+      "rdfs:label": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods (52)"
     },
     {
       "@id": "brdfat:A_TDWH",
       "@type": "bont:ActivityType",
-      "label": "Wholesale trade and commission trade, except of motor vehicles and motorcycles (51)"
+      "rdfs:label": "Wholesale trade and commission trade, except of motor vehicles and motorcycles (51)"
     },
     {
       "@id": "brdfat:A_TEXT",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of textiles (17)"
+      "rdfs:label": "Manufacture of textiles (17)"
     },
     {
       "@id": "brdfat:A_TLND",
       "@type": "bont:ActivityType",
-      "label": "Other land transport"
+      "rdfs:label": "Other land transport"
     },
     {
       "@id": "brdfat:A_TOBC",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of tobacco products (16)"
+      "rdfs:label": "Manufacture of tobacco products (16)"
     },
     {
       "@id": "brdfat:A_TPIP",
       "@type": "bont:ActivityType",
-      "label": "Transport via pipelines"
+      "rdfs:label": "Transport via pipelines"
     },
     {
       "@id": "brdfat:A_TRAI",
       "@type": "bont:ActivityType",
-      "label": "Transport via railways"
+      "rdfs:label": "Transport via railways"
     },
     {
       "@id": "brdfat:A_TWAI",
       "@type": "bont:ActivityType",
-      "label": "Inland water transport"
+      "rdfs:label": "Inland water transport"
     },
     {
       "@id": "brdfat:A_TWAS",
       "@type": "bont:ActivityType",
-      "label": "Sea and coastal water transport"
+      "rdfs:label": "Sea and coastal water transport"
     },
     {
       "@id": "brdfat:A_VOIL",
       "@type": "bont:ActivityType",
-      "label": "Processing vegetable oils and fats"
+      "rdfs:label": "Processing vegetable oils and fats"
     },
     {
       "@id": "brdfat:A_WASF",
       "@type": "bont:ActivityType",
-      "label": "Waste water treatment, food"
+      "rdfs:label": "Waste water treatment, food"
     },
     {
       "@id": "brdfat:A_WASO",
       "@type": "bont:ActivityType",
-      "label": "Waste water treatment, other"
+      "rdfs:label": "Waste water treatment, other"
     },
     {
       "@id": "brdfat:A_WATR",
       "@type": "bont:ActivityType",
-      "label": "Collection, purification and distribution of water (41)"
+      "rdfs:label": "Collection, purification and distribution of water (41)"
     },
     {
       "@id": "brdfat:A_WHEA",
       "@type": "bont:ActivityType",
-      "label": "Cultivation of wheat"
+      "rdfs:label": "Cultivation of wheat"
     },
     {
       "@id": "brdfat:A_WOOD",
       "@type": "bont:ActivityType",
-      "label": "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials (20)"
+      "rdfs:label": "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials (20)"
     },
     {
       "@id": "brdfat:A_WOOL",
       "@type": "bont:ActivityType",
-      "label": "Wool, silk-worm cocoons"
+      "rdfs:label": "Wool, silk-worm cocoons"
     },
     {
       "@id": "brdfat:A_WOOW",
       "@type": "bont:ActivityType",
-      "label": "Re-processing of secondary wood material into new wood material"
+      "rdfs:label": "Re-processing of secondary wood material into new wood material"
     }
   ]
 }

@@ -33,6 +33,7 @@ class Converter:
         data = {
             "@context": {
                 "bont" : "http://ontology.bonsai.uno/core#",
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
                 self.abbrev : self.full,
             },
             "@graph": []
@@ -41,7 +42,7 @@ class Converter:
             data['@graph'].append({
                 '@id': self.substitute(uri),
                 "@type" : self.type_,
-                "label": name,
+                "rdfs:label": name,
             })
         return data
 
