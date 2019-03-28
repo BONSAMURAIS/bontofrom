@@ -7,8 +7,8 @@ class StreamingCompressedJSONWriter:
     def __init__(self, filepath, header=GENERIC_HEADER):
         if not filepath.endswith(".json.bz2"):
             filepath += ".json.bz2"
-        self.file = bz2.open(filepath, mode='wt', compresslevel=9, encoding='utf-8')
-        open(filepath, "w")
+        self.file = bz2.open(filepath, mode='at', compresslevel=9, encoding='utf-8')
+        open(filepath, "a")
         self.file.write('{"@context": ')
         self.write_obj(GENERIC_HEADER["@context"])
         self.file.write('"@data": [')

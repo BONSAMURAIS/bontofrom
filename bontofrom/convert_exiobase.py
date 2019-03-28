@@ -62,10 +62,13 @@ def process_row(index, row, entries, metadata, a_counter):
 
         if "tonnes" == cells[4].v:
             unitURI = units["kilogram"]
-        if "TJ" == cells[4].v:
+        elif "TJ" == cells[4].v:
             unitURI = units["megajoule"]
-        if "Meuro" == cells[4]:
+        elif "Meuro" == cells[4].v:
             unitURI = units["euro"]
+        else:
+            unitURI = units[cells[4].v]
+
         flow_object = cells[1].v
         yearURI = times["2011"]
 
@@ -99,12 +102,14 @@ def process_row(index, row, entries, metadata, a_counter):
     return supply_flows
 
 
-def convert_tables(metadata, supplyfile, usefile, limit=10):
+def convert_tables(metadata, supplyfile, usefile, limit=-1):
     a_counter = 1
     with open_workbook(supplyfile) as wb:
         ws = wb.get_sheet(DATA_SHEET_INDEX)
         entries = associate_col_activity(metadata["activitytype"], ws)
-        for index, row in tqdm(enumerate(ws.rows())):
+        if limit == -1:
+            limit = ws.dimension.h
+        for index, row in tqdm(enumerate(ws.rows()), total=limit):
             if index < limit:
                 process_row(index, row, entries, metadata, a_counter)
                 continue
