@@ -1,4 +1,4 @@
-def format_supply_flow(amount, unit, location, activity_type, flow_object, unit, time, determining_flow, counter, supply_dict={}):
+def format_supply_flow(amount, unit, location, activity_type, flow_object, time, determining_flow, counter, supply_dict={}):
     """Return a list of RDF triples as Python for a supply ``Flow``.
 
     ``amount`` is a float.
