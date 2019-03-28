@@ -31,8 +31,8 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object,
     This mapping dictionary is needed for the use functions, as we need the URI references.
 
     """
-    activity_uri = "brdfsuex:{}".format(next(counter))
-    flow_uri = "brdfsuex:{}".format(next(counter))
+    activity_uri = "brdfsuex:{}".format(counter)
+    flow_uri = "brdfsuex:{}".format(counter+1)
     output = [{
         # Activity instance
         "@id" : activity_uri,
@@ -55,7 +55,7 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object,
     return output, mapping_dict
 
 
-def format_domestic_use_flow(amount, unit, location, activity_type, flow_object, unit, time, counter, mapping_dict):
+def format_domestic_use_flow(amount, unit, location, activity_type, flow_object, time, counter, mapping_dict):
     """Return a list of RDF triples as Python for a domestic use ``Flow``.
 
     ``amount`` is a float.
@@ -90,7 +90,7 @@ def format_domestic_use_flow(amount, unit, location, activity_type, flow_object,
     return output
 
 
-def format_trade_flow(amount, unit, from_location, to_location, activity_type, flow_object, unit, time, counter, mapping_dict):
+def format_trade_flow(amount, unit, from_location, to_location, activity_type, flow_object, time, counter, mapping_dict):
     """
     Model trade using a separate `transport activity <https://schema.org/TransferAction>`__. We need two ``flow`` instances for each trade: one is the production flow in the originating country (that we look up in ``mapping_dict``). The other is created, and links the trade activity to the consuming activity (which we also look up in ``mapping_dict``).
 
