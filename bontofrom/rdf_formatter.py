@@ -32,7 +32,7 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object,
 
     """
     activity_uri = "brdfsuex:{}".format(counter)
-    flow_uri = "brdfsuex:{}".format(counter)
+    flow_uri = "brdfsuex:{}".format(counter+1)
     output = [{
         # Activity instance
         "@id" : activity_uri,
@@ -87,7 +87,7 @@ def format_domestic_use_flow(amount, unit, location, activity_type, flow_object,
         "bont:objectType" : flow_object,
         "om2:hasUnit" : "om2:" + unit
     }]
-    return input_
+    return output
 
 
 def format_trade_flow(amount, unit, from_location, to_location, activity_type, flow_object, time, counter, mapping_dict):
