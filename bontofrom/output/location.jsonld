@@ -1,0 +1,256 @@
+{
+  "@context": {
+    "bont": "http://ontology.bonsai.uno/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "gn": "sws.geonames.org/",
+    "schema": "http://schema.org/",
+    "brdfl": "http://rdf.bonsai.uno/location/exiobase3_3_17/"
+  },
+  "@graph": [
+    {
+      "@id": "brdfl:WA",
+      "@type": "schema:Place",
+      "rdfs:label": "WA"
+    },
+    {
+      "@id": "brdfl:WL",
+      "@type": "schema:Place",
+      "rdfs:label": "WL"
+    },
+    {
+      "@id": "brdfl:WE",
+      "@type": "schema:Place",
+      "rdfs:label": "WE"
+    },
+    {
+      "@id": "brdfl:WF",
+      "@type": "schema:Place",
+      "rdfs:label": "WF"
+    },
+    {
+      "@id": "brdfl:WM",
+      "@type": "schema:Place",
+      "rdfs:label": "WM"
+    },
+    {
+      "@id": "http://2077456",
+      "@type": "schema:Place",
+      "rdfs:label": "AU"
+    },
+    {
+      "@id": "http://2782113",
+      "@type": "schema:Place",
+      "rdfs:label": "AT"
+    },
+    {
+      "@id": "http://2802361",
+      "@type": "schema:Place",
+      "rdfs:label": "BE"
+    },
+    {
+      "@id": "http://3469034",
+      "@type": "schema:Place",
+      "rdfs:label": "BR"
+    },
+    {
+      "@id": "http://732800",
+      "@type": "schema:Place",
+      "rdfs:label": "BG"
+    },
+    {
+      "@id": "http://6251999",
+      "@type": "schema:Place",
+      "rdfs:label": "CA"
+    },
+    {
+      "@id": "http://1814991",
+      "@type": "schema:Place",
+      "rdfs:label": "CN"
+    },
+    {
+      "@id": "http://146669",
+      "@type": "schema:Place",
+      "rdfs:label": "CY"
+    },
+    {
+      "@id": "http://3077311",
+      "@type": "schema:Place",
+      "rdfs:label": "CZ"
+    },
+    {
+      "@id": "http://2623032",
+      "@type": "schema:Place",
+      "rdfs:label": "DK"
+    },
+    {
+      "@id": "http://453733",
+      "@type": "schema:Place",
+      "rdfs:label": "EE"
+    },
+    {
+      "@id": "http://660013",
+      "@type": "schema:Place",
+      "rdfs:label": "FI"
+    },
+    {
+      "@id": "http://3017382",
+      "@type": "schema:Place",
+      "rdfs:label": "FR"
+    },
+    {
+      "@id": "http://2921044",
+      "@type": "schema:Place",
+      "rdfs:label": "DE"
+    },
+    {
+      "@id": "http://390903",
+      "@type": "schema:Place",
+      "rdfs:label": "GR"
+    },
+    {
+      "@id": "http://719819",
+      "@type": "schema:Place",
+      "rdfs:label": "HU"
+    },
+    {
+      "@id": "http://3202326",
+      "@type": "schema:Place",
+      "rdfs:label": "HR"
+    },
+    {
+      "@id": "http://1269750",
+      "@type": "schema:Place",
+      "rdfs:label": "IN"
+    },
+    {
+      "@id": "http://1643084",
+      "@type": "schema:Place",
+      "rdfs:label": "ID"
+    },
+    {
+      "@id": "http://2963597",
+      "@type": "schema:Place",
+      "rdfs:label": "IE"
+    },
+    {
+      "@id": "http://3175395",
+      "@type": "schema:Place",
+      "rdfs:label": "IT"
+    },
+    {
+      "@id": "http://1861060",
+      "@type": "schema:Place",
+      "rdfs:label": "JP"
+    },
+    {
+      "@id": "http://458258",
+      "@type": "schema:Place",
+      "rdfs:label": "LV"
+    },
+    {
+      "@id": "http://597427",
+      "@type": "schema:Place",
+      "rdfs:label": "LT"
+    },
+    {
+      "@id": "http://2960313",
+      "@type": "schema:Place",
+      "rdfs:label": "LU"
+    },
+    {
+      "@id": "http://2562770",
+      "@type": "schema:Place",
+      "rdfs:label": "MT"
+    },
+    {
+      "@id": "http://3996063",
+      "@type": "schema:Place",
+      "rdfs:label": "MX"
+    },
+    {
+      "@id": "http://2750405",
+      "@type": "schema:Place",
+      "rdfs:label": "NL"
+    },
+    {
+      "@id": "http://3144096",
+      "@type": "schema:Place",
+      "rdfs:label": "NO"
+    },
+    {
+      "@id": "http://798544",
+      "@type": "schema:Place",
+      "rdfs:label": "PL"
+    },
+    {
+      "@id": "http://2264397",
+      "@type": "schema:Place",
+      "rdfs:label": "PT"
+    },
+    {
+      "@id": "http://798549",
+      "@type": "schema:Place",
+      "rdfs:label": "RO"
+    },
+    {
+      "@id": "http://2017370",
+      "@type": "schema:Place",
+      "rdfs:label": "RU"
+    },
+    {
+      "@id": "http://3057568",
+      "@type": "schema:Place",
+      "rdfs:label": "SK"
+    },
+    {
+      "@id": "http://3190538",
+      "@type": "schema:Place",
+      "rdfs:label": "SI"
+    },
+    {
+      "@id": "http://953987",
+      "@type": "schema:Place",
+      "rdfs:label": "ZA"
+    },
+    {
+      "@id": "http://1835841",
+      "@type": "schema:Place",
+      "rdfs:label": "KR"
+    },
+    {
+      "@id": "http://2510769",
+      "@type": "schema:Place",
+      "rdfs:label": "ES"
+    },
+    {
+      "@id": "http://2661886",
+      "@type": "schema:Place",
+      "rdfs:label": "SE"
+    },
+    {
+      "@id": "http://2658434",
+      "@type": "schema:Place",
+      "rdfs:label": "CH"
+    },
+    {
+      "@id": "http://1668284",
+      "@type": "schema:Place",
+      "rdfs:label": "TW"
+    },
+    {
+      "@id": "http://298795",
+      "@type": "schema:Place",
+      "rdfs:label": "TR"
+    },
+    {
+      "@id": "http://2635167",
+      "@type": "schema:Place",
+      "rdfs:label": "GB"
+    },
+    {
+      "@id": "http://6252001",
+      "@type": "schema:Place",
+      "rdfs:label": "US"
+    }
+  ]
+}
