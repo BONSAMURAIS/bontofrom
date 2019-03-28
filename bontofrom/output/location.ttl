@@ -1,0 +1,152 @@
+@prefix bont:  <http://ontology.bonsai.uno/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gn:  <http://sws.geonames.org/> .
+@prefix schema:  <http://schema.org/> .
+@prefix brdfl:  <http://rdf.bonsai.uno/location/exiobase3_3_17/> .
+
+brdfl:WA  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "WA" .
+
+brdfl:WL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "WL" .
+
+brdfl:WE  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "WE" .
+
+brdfl:WF  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "WF" .
+
+brdfl:WM  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "WM" .
+
+gn:2077456  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "AU" .
+
+gn:2782113  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "AT" .
+
+gn:2802361  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "BE" .
+
+gn:3469034  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "BR" .
+
+gn:732800  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "BG" .
+
+gn:6251999  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "CA" .
+
+gn:1814991  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "CN" .
+
+gn:146669  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "CY" .
+
+gn:3077311  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "CZ" .
+
+gn:2623032  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "DK" .
+
+gn:453733  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "EE" .
+
+gn:660013  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "FI" .
+
+gn:3017382  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "FR" .
+
+gn:2921044  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "DE" .
+
+gn:390903  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "GR" .
+
+gn:719819  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "HU" .
+
+gn:3202326  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "HR" .
+
+gn:1269750  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "IN" .
+
+gn:1643084  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "ID" .
+
+gn:2963597  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "IE" .
+
+gn:3175395  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "IT" .
+
+gn:1861060  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "JP" .
+
+gn:458258  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "LV" .
+
+gn:597427  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "LT" .
+
+gn:2960313  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "LU" .
+
+gn:2562770  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "MT" .
+
+gn:3996063  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "MX" .
+
+gn:2750405  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "NL" .
+
+gn:3144096  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "NO" .
+
+gn:798544  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "PL" .
+
+gn:2264397  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "PT" .
+
+gn:798549  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "RO" .
+
+gn:2017370  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "RU" .
+
+gn:3057568  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "SK" .
+
+gn:3190538  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "SI" .
+
+gn:953987  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "ZA" .
+
+gn:1835841  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "KR" .
+
+gn:2510769  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "ES" .
+
+gn:2661886  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "SE" .
+
+gn:2658434  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "CH" .
+
+gn:1668284  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "TW" .
+
+gn:298795  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "TR" .
+
+gn:2635167  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "GB" .
+
+gn:6252001  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  schema:Place ;
+        rdfs:label  "US" .

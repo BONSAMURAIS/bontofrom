@@ -21,7 +21,7 @@ class Converter:
         self.context = {
                 "bont" : "http://ontology.bonsai.uno/core#",
                 "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                "gn": "sws.geonames.org/",
+                "gn": "http://sws.geonames.org/",
                 "schema": "http://schema.org/",
         }
         self.context.update({abbrev: full})

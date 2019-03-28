@@ -20,13 +20,11 @@ def get_metadata():
         next(reader)
         metadata['flowobject'] = {row[0]: _(row[3]) for row in reader if row}
 
-    get_location = lambda l: (l[0], _(l[1])) if l[1] else (l[0], _(l[2]))
-
     with open(metadata_dir / "exiobase_location_URIs.csv", "r", encoding='utf-8') as f:
         reader = csv.reader(f)
         # Skip header
         next(reader)
-        metadata['location'] = dict(get_location(row) for row in reader if row)
+        metadata['location'] = {row[0]: _(row[2]) for row in reader if row}
 
 
     metadata['units'] = {
