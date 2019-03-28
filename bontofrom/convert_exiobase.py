@@ -1,7 +1,7 @@
 from bontofrom.convert_metadata import get_metadata
 from pyxlsb import open_workbook
 from tqdm import tqdm
-from bontofrom.exiobase_scratch import format_supply_flow
+from bontofrom.rdf_formatter import format_supply_flow
 from .json_writer import StreamingCompressedJSONWriter
 from pprint import pprint
 
