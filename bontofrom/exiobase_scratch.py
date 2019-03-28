@@ -1,9 +1,16 @@
-def format_supply_flow(amount, unit, location, activity_type, flow_object, unit, counter):
+def format_supply_flow(amount, unit, location, activity_type, flow_object, unit, time, counter):
     """Return a list of RDF triples as Python for a supply ``Flow``.
 
     ``amount`` is a float.
 
-    ``unit``, ``location``, ``activity_type``, ``unit``, and ``flow_object`` are strings **with URI prefixes already substituted**.
+    The following are strings **with URI prefixes already substituted**:
+
+        * ``unit``
+        * ``location``
+        * ``activity_type``
+        * ``unit``
+        * ``flow_object``
+        * ``time``
 
     ``counter`` is an instance of ``collections.Counter`` used to count blank nodes."""
     activity_uri = "brdfsu:{}".format(next(counter))
@@ -14,7 +21,7 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object, unit,
         "@type" : "bont:Activity",
         "bont:activityType" : activity_type,
         "bont:location": location,
-        "bont:temporalExtent": "TBD",
+        "bont:temporalExtent": time,
         "bont:determiningFlow": flow_uri,
     }, {
         # Flow instance
