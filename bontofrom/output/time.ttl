@@ -1,0 +1,57 @@
+@prefix brdftim:  <http://rdf.bonsai.uno/time/> .
+@prefix time:  <https://www.w3.org/TR/owl-time/> .
+
+brdftim:oneyearlong  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:DurationDescription ;
+        time:years  1 .
+
+brdftim:2011end  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2011-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2011start  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2011  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:ProperInterval ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <https://www.wikidata.org/wiki/Q1994> ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <http://reference.data.gov.uk/doc/year/2011> ;
+        time:hasBeginning            brdftim:2011start ;
+        time:hasDurationDescription  brdftim:oneyearlong ;
+        time:hasEnd                  brdftim:2011end .
+
+brdftim:2016end  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2016-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2016start  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2016-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2016  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:ProperInterval ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <https://www.wikidata.org/wiki/Q25245> ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <http://reference.data.gov.uk/doc/year/2016> ;
+        time:hasBeginning            brdftim:2016start ;
+        time:hasDurationDescription  brdftim:oneyearlong ;
+        time:hasEnd                  brdftim:2016end .
+
+brdftim:2017end  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2017-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2017start  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2017  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:ProperInterval ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <https://www.wikidata.org/wiki/Q25290> ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <http://reference.data.gov.uk/doc/year/2017> ;
+        time:hasBeginning            brdftim:2017start ;
+        time:hasDurationDescription  brdftim:oneyearlong ;
+        time:hasEnd                  brdftim:2017end .
+
+brdftim:2018end  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2018-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2018start  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:Instant ;
+        time:inXSDDate  "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+brdftim:2018  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  time:ProperInterval ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <https://www.wikidata.org/wiki/Q25291> ;
+        <http://www.w3.org/2002/07/owl#sameAs>  <http://reference.data.gov.uk/doc/year/2018> ;
+        time:hasBeginning            brdftim:2018start ;
+        time:hasDurationDescription  brdftim:oneyearlong ;
+        time:hasEnd                  brdftim:2018end .

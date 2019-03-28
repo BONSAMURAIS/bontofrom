@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "years": {
+      "@id": "https://www.w3.org/TR/owl-time/years",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sameAs": {
+      "@id": "http://www.w3.org/2002/07/owl#sameAs",
+      "@type": "@id"
+    },
+    "hasEnd": {
+      "@id": "https://www.w3.org/TR/owl-time/hasEnd",
+      "@type": "@id"
+    },
+    "hasDurationDescription": {
+      "@id": "https://www.w3.org/TR/owl-time/hasDurationDescription",
+      "@type": "@id"
+    },
+    "hasBeginning": {
+      "@id": "https://www.w3.org/TR/owl-time/hasBeginning",
+      "@type": "@id"
+    },
+    "inXSDDate": {
+      "@id": "https://www.w3.org/TR/owl-time/inXSDDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "brdftim": "http://rdf.bonsai.uno/time/",
+    "time": "https://www.w3.org/TR/owl-time/"
+  },
+  "@graph": [
+    {
+      "@id": "brdftim:oneyearlong",
+      "@type": "time:DurationDescription",
+      "time:years": 1
+    },
+    {
+      "@id": "brdftim:2011end",
+      "@type": "time:Instant",
+      "inXSDDate": "2011-12-31"
+    },
+    {
+      "@id": "brdftim:2011start",
+      "@type": "time:Instant",
+      "inXSDDate": "2011-01-01"
+    },
+    {
+      "@id": "brdftim:2011",
+      "@type": "time:ProperInterval",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q1994",
+        "http://reference.data.gov.uk/doc/year/2011"
+      ],
+      "hasBeginning": "brdftim:2011start",
+      "hasDurationDescription": "brdftim:oneyearlong",
+      "hasEnd": "brdftim:2011end"
+    },
+    {
+      "@id": "brdftim:2016end",
+      "@type": "time:Instant",
+      "inXSDDate": "2016-12-31"
+    },
+    {
+      "@id": "brdftim:2016start",
+      "@type": "time:Instant",
+      "inXSDDate": "2016-01-01"
+    },
+    {
+      "@id": "brdftim:2016",
+      "@type": "time:ProperInterval",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q25245",
+        "http://reference.data.gov.uk/doc/year/2016"
+      ],
+      "hasBeginning": "brdftim:2016start",
+      "hasDurationDescription": "brdftim:oneyearlong",
+      "hasEnd": "brdftim:2016end"
+    },
+    {
+      "@id": "brdftim:2017end",
+      "@type": "time:Instant",
+      "inXSDDate": "2017-12-31"
+    },
+    {
+      "@id": "brdftim:2017start",
+      "@type": "time:Instant",
+      "inXSDDate": "2017-01-01"
+    },
+    {
+      "@id": "brdftim:2017",
+      "@type": "time:ProperInterval",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q25290",
+        "http://reference.data.gov.uk/doc/year/2017"
+      ],
+      "hasBeginning": "brdftim:2017start",
+      "hasDurationDescription": "brdftim:oneyearlong",
+      "hasEnd": "brdftim:2017end"
+    },
+    {
+      "@id": "brdftim:2018end",
+      "@type": "time:Instant",
+      "inXSDDate": "2018-12-31"
+    },
+    {
+      "@id": "brdftim:2018start",
+      "@type": "time:Instant",
+      "inXSDDate": "2018-01-01"
+    },
+    {
+      "@id": "brdftim:2018",
+      "@type": "time:ProperInterval",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q25291",
+        "http://reference.data.gov.uk/doc/year/2018"
+      ],
+      "hasBeginning": "brdftim:2018start",
+      "hasDurationDescription": "brdftim:oneyearlong",
+      "hasEnd": "brdftim:2018end"
+    }
+  ]
+}
