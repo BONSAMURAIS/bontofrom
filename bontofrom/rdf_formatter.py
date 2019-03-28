@@ -31,8 +31,8 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object,
     This mapping dictionary is needed for the use functions, as we need the URI references.
 
     """
-    activity_uri = "brdfsuex:{}".format(counter)
-    flow_uri = "brdfsuex:{}".format(counter+1)
+    activity_uri = "brdfsuex:{}".format(next(counter))
+    flow_uri = "brdfsuex:{}".format(next(counter))
     output = [{
         # Activity instance
         "@id" : activity_uri,
@@ -51,7 +51,15 @@ def format_supply_flow(amount, unit, location, activity_type, flow_object,
     }]
     if determining_flow:
         output[0]["bont:determiningFlow"] = flow_uri
-        mapping_dict[(activity_type, location)] = activity_uri
+
+    if "activities" not in mapping_dict.keys():
+        mapping_dict["activities"] = dict()
+    if "flows" not in mapping_dict.keys():
+        mapping_dict["flows"] = dict()
+
+    mapping_dict["activities"][(activity_type, location)] = activity_uri
+    mapping_dict["flows"][(flow_object, location)] = flow_uri
+
     return output, mapping_dict
 
 
@@ -65,11 +73,8 @@ def format_domestic_use_flow(amount, unit, location, activity_type, flow_object,
         * ``unit``
         * ``location``
         * ``activity_type``
-        * ``unit``
         * ``flow_object``
         * ``time``
-
-    ``determining_flow`` is a boolean indicating whether the flow is a determining flow.
 
     ``counter`` is an instance of ``collections.Counter`` used to count blank nodes.
 
@@ -87,11 +92,22 @@ def format_domestic_use_flow(amount, unit, location, activity_type, flow_object,
         "bont:objectType" : flow_object,
         "om2:hasUnit" : "om2:" + unit
     }]
-    return output
+    return input_
 
 
 def format_trade_flow(amount, unit, from_location, to_location, activity_type, flow_object, time, counter, mapping_dict):
     """
+
+    :param amount:
+    :param unit:
+    :param from_location:
+    :param to_location:
+    :param activity_type:
+    :param flow_object:
+    :param time:
+    :param counter:
+    :param mapping_dict:
+
     Model trade using a separate `transport activity <https://schema.org/TransferAction>`__. We need two ``flow`` instances for each trade: one is the production flow in the originating country (that we look up in ``mapping_dict``). The other is created, and links the trade activity to the consuming activity (which we also look up in ``mapping_dict``).
 
     Note: This function makes several assumptions that are specific to a first deliverable using EXIOBASE, and should not be used in the future! Specifically, we only know how much of a flow object is imported into a country, but not its distribution among different industries."""
