@@ -9,33 +9,33 @@ output_dir = Path(__file__).parent / "output"
 EXIOBASE_DOCKER = """
 Please run the following to convert JSON-LD to TTL:
 
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle {0}flowobject.jsonld > {0}flowobject.ttl"
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle {0}activitytype.jsonld > {0}activitytype.ttl"
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle {0}location.jsonld > {0}location.ttl"
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}flowobject.jsonld" > "{0}flowobject.ttl"
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}activitytype.jsonld" > "{0}activitytype.ttl"
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}location.jsonld" > "{0}location.ttl"
 """.format(output_dir)
 
 
 class Converter:
     def __init__(self, abbrev, full, filename, type_, metadata):
-        self.abbrev = abbrev
-        self.full = full
+        self.context = {
+                "bont" : "http://ontology.bonsai.uno/core#",
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                "gn": "sws.geonames.org/",
+                "schema": "http://schema.org/",
+        }
+        self.context.update({abbrev: full})
         self.metadata = metadata
         self.filename = filename
         self.type_ = type_
 
     def substitute(self, string):
-        return string.replace(
-            self.full,
-            self.abbrev + ":"
-        )
+        for k, v in self.context.items():
+            string = string.replace(v, k + ":")
+        return string
 
     def get_data(self):
         data = {
-            "@context": {
-                "bont" : "http://ontology.bonsai.uno/core#",
-                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                self.abbrev : self.full,
-            },
+            "@context": self.context,
             "@graph": []
         }
         for name, uri in self.metadata[self.filename].items():
@@ -73,6 +73,15 @@ def convert_exiobase():
         metadata,
     )
     activity_type.write_file()
+
+    location = Converter(
+        "brdfl",
+        "http://rdf.bonsai.uno/location/exiobase3_3_17/",
+        "location",
+        "schema:Place",
+        metadata,
+    )
+    location.write_file()
 
     print(EXIOBASE_DOCKER)
     pass
