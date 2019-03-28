@@ -9,10 +9,11 @@ output_dir = Path(__file__).parent / "output"
 EXIOBASE_DOCKER = """
 Please run the following to convert JSON-LD to TTL:
 
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}/flowobject.jsonld" > "{0}/flowobject.ttl"
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}/activitytype.jsonld" > "{0}/activitytype.ttl"
-    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle "{0}/location.jsonld" > "{0}/location.ttl"
-""".format(output_dir)
+    cd "{0}"
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/flowobject.jsonld > bontofrom/output/flowobject.ttl
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/activitytype.jsonld > bontofrom/output/activitytype.ttl
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/location.jsonld > bontofrom/output/location.ttl
+""".format((Path(__file__).parent.parent).absolute())
 
 
 class Converter:
