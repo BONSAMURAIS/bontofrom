@@ -1,0 +1,14 @@
+@prefix bont:  <http://ontology.bonsai.uno/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gn:  <http://sws.geonames.org/> .
+@prefix schema:  <http://schema.org/> .
+@prefix om:  <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+om:kilogram  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  om:Unit ;
+        rdfs:label  "kilogram" .
+
+om:megajoule  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  om:Unit ;
+        rdfs:label  "megajoule" .
+
+om:euro  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  om:Unit ;
+        rdfs:label  "euro" .

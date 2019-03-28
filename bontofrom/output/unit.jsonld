@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "bont": "http://ontology.bonsai.uno/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "gn": "http://sws.geonames.org/",
+    "schema": "http://schema.org/",
+    "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  },
+  "@graph": [
+    {
+      "@id": "om:kilogram",
+      "@type": "om:Unit",
+      "rdfs:label": "kilogram"
+    },
+    {
+      "@id": "om:megajoule",
+      "@type": "om:Unit",
+      "rdfs:label": "megajoule"
+    },
+    {
+      "@id": "om:euro",
+      "@type": "om:Unit",
+      "rdfs:label": "euro"
+    }
+  ]
+}

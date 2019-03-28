@@ -13,6 +13,7 @@ Please run the following to convert JSON-LD to TTL:
     docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/flowobject.jsonld > bontofrom/output/flowobject.ttl
     docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/activitytype.jsonld > bontofrom/output/activitytype.ttl
     docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/location.jsonld > bontofrom/output/location.ttl
+    docker run -it --rm -v `pwd`:/rdf stain/jena riot -out Turtle bontofrom/output/unit.jsonld > bontofrom/output/unit.ttl
 """.format((Path(__file__).parent.parent).absolute())
 
 
@@ -24,7 +25,8 @@ class Converter:
                 "gn": "http://sws.geonames.org/",
                 "schema": "http://schema.org/",
         }
-        self.context.update({abbrev: full})
+        if abbrev:
+            self.context.update({abbrev: full})
         self.metadata = metadata
         self.filename = filename
         self.type_ = type_
@@ -83,6 +85,15 @@ def convert_exiobase():
         metadata,
     )
     location.write_file()
+
+    unit = Converter(
+        "om",
+        "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "unit",
+        "om:Unit",
+        metadata,
+    )
+    unit.write_file()
 
     print(EXIOBASE_DOCKER)
     pass

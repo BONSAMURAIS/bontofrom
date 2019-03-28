@@ -27,7 +27,7 @@ def get_metadata():
         metadata['location'] = {row[0]: _(row[2]) for row in reader if row}
 
 
-    metadata['units'] = {
+    metadata['unit'] = {
         'kilogram': 'http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram',
         'megajoule': 'http://www.ontology-of-units-of-measure.org/resource/om-2/megajoule',
         'euro': 'http://www.ontology-of-units-of-measure.org/resource/om-2/euro',
