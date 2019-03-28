@@ -1,0 +1,6 @@
+Exiobase_Emissions_Name,URI
+CFCs,http://rdf.bonsai.uno/flowobject/exiobase3_3_17/CFCs
+HCFCs,http://rdf.bonsai.uno/flowobject/exiobase3_3_17/HCFCs
+HFCs,http://rdf.bonsai.uno/flowobject/exiobase3_3_17/HFCs
+Other_emissions_nec,http://rdf.bonsai.uno/flowobject/exiobase3_3_17/Other_emissions_nec
+PFCs,http://rdf.bonsai.uno/flowobject/exiobase3_3_17/PFCs
