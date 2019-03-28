@@ -52,7 +52,7 @@ def get_metadata():
         'cubic meters': '',
     }
 
-    metadata['time']: {
+    metadata['time'] = {
         '2011': "http://rdf.bonsai.uno/time/2011",
         '2015': "http://rdf.bonsai.uno/time/2015",
         '2016': "http://rdf.bonsai.uno/time/2016",
