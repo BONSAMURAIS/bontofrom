@@ -31,6 +31,18 @@ def get_metadata():
         # Skip header
         next(reader)
         metadata['location'] = {row[0]: _(row[1]) for row in reader if row}
+        
+    with open(metadata_dir / "lcia_activitytype_uri.csv", "r", encoding='utf-8') as f:
+        reader = csv.reader(f)
+        # Skip header
+        next(reader)
+        metadata['location'] = {row[0]: _(row[1]) for row in reader if row}
+        
+    with open(metadata_dir / "lcia_flowobject_uri.csv", "r", encoding='utf-8') as f:
+        reader = csv.reader(f)
+        # Skip header
+        next(reader)
+        metadata['location'] = {row[0]: _(row[1]) for row in reader if row}
 
     metadata['unit'] = {
         'kilogram': 'http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram',
