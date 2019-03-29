@@ -1,58 +1,105 @@
-from bontofrom.convert_metadata import get_metadata
+"""
+Parse exiobase xlsb USE and SUP files, and produce jsonld bz2 archives.
+"""
 from pyxlsb import open_workbook
 from tqdm import tqdm
-from .rdf_formatter import format_supply_flow, format_domestic_use_flow, format_trade_flow
-from .json_writer import StreamingCompressedJSONWriter
-from .load_metadata import get_metadata
-
 import logging
-
-
 import itertools
 
+from .json_writer import StreamingCompressedJSONWriter
+from .load_metadata import get_metadata
+from .rdf_formatter import (
+    format_supply_flow,
+    format_domestic_use_flow,
+    format_trade_flow,
+)
+
+# Exiobase comes with tonnes, TJ and Meuro values, but BONSAI uses kg, MJ & €
 DATA_SHEET_INDEX = 2
 TONNESTOKG = 1000
 TJTOMJ = 1 / 1e06
 MEUROTOEURO = 1e06
 
+TONNES = "tonnes"
+TJ = "TJ"
+MEURO = "Meuro"
 
-def associate_col_activity(activity_metadata, ws):
+
+def associate_col_activity(work_sheet):
     """ Create dictionary of column index -> {activitytype, location}
 
     """
     entries = {}
-    for index, row in enumerate(ws.rows()):
+    for index, row in enumerate(work_sheet.rows()):
         if index not in [0, 1]:  # zero based indexing of rows
             break
-        for c in row:
-            if c.v:
+        for cell in row:
+            if cell.v:
                 if index == 0:
-                    entries[c.c] = {"location": c.v}
+                    entries[cell.c] = {"location": cell.v}
                 if index == 1:  # the country code
-                    entries[c.c]["activitytype"] = c.v
+                    entries[cell.c]["activitytype"] = cell.v
         continue
     return entries
 
 
-def isdiagonal(c):
-    return c.r + 1 == c.c
+def isdiagonal(cell):
+    return cell.r + 1 == cell.c
 
 
-def isunitneedsconversion(u):
-    return u == "tonnes" or u == "TJ" or u == "Meuro"
+def isunitneedsconversion(unit):
+    return unit in [TONNES, TJ, MEURO]
 
-def isdomesticuse(c, entries, rowdata):
-    column_country = entries[c.c]['location']
+
+def isdomesticuse(cell, entries, rowdata):
+    """
+    In the USE exiobase tables, domestic use cells are those of the diagonal
+    belonging to a same country. In the scheme blow, domesticuse cells are
+    those of the box of `#` surrounding a country code.::
+
+    ######············
+    # AT #············
+    ######············
+    ······######······
+    ······# AU #······
+    ······######······
+    ············######
+    ::
+    """
+    column_country = entries[cell.c]["location"]
     row_country = rowdata[0]
     return column_country == row_country
 
-def convertAmount(v, sourceunit):
-    if sourceunit == "TJ":
-        return v * TJTOMJ
-    if sourceunit == "tonnes":
-        return v * TONNESTOKG
-    if sourceunit == "Meuro":
-        return v * MEUROTOEURO
+
+def convert_amount(value, sourceunit):
+    if sourceunit not in [TJ, TONNES, MEURO]:
+        raise Exception("sourceunit unit must be TJ, tonnes or Meuro")
+    factor = 1
+
+    if sourceunit == TJ:
+        factor = TJTOMJ
+    if sourceunit == TONNES:
+        factor = TONNESTOKG
+    if sourceunit == MEURO:
+        factor = MEUROTOEURO
+    return value * factor
+
+
+def get_unit_uri(cell, units):
+    """
+    Provide the Bonsai unit for a given exiobase unit.
+    Bonsai uses kilogram, megajoule and euro as units.
+    """
+    if cell.v == TONNES:
+        unit_uri = units["kilogram"]
+    elif cell.v == TJ:
+        unit_uri = units["megajoule"]
+    elif cell.v == MEURO:
+        unit_uri = units["euro"]
+    else:
+        unit_uri = units[cell.v]
+
+    return unit_uri
 
 
 def process_supply_row(index, row, entries, metadata, a_counter, mapping_dict):
@@ -65,51 +112,44 @@ def process_supply_row(index, row, entries, metadata, a_counter, mapping_dict):
     times = metadata["time"]
     if index > 3:
         cells = [c for c in row if c.v != 0]
-        # row_data will hold the following info from the file:
-        #  Country code	| Product name | Product code 1| 	Product code 2 |	Unit |
-        row_data = cells[:5]
-
-        if "tonnes" == cells[4].v:
-            unitURI = units["kilogram"]
-        elif "TJ" == cells[4].v:
-            unitURI = units["megajoule"]
-        elif "Meuro" == cells[4].v:
-            unitURI = units["euro"]
-        else:
-            unitURI = units[cells[4].v]
 
         flow_object = cells[1].v
-        yearURI = times["2011"]
+        unit_uri = get_unit_uri(cells[4], units)
+        year_uri = times["2011"]
 
-        for c in cells[5:]:
-            locationURI = locations[entries[c.c]["location"]]
-            activitytype = entries[c.c]["activitytype"]
-            activity_typeURI = activitytypes[activitytype]
-            flow_objectURI = flowobjects[flow_object]
-            isdetermining_flow = False
-            if isdiagonal(c):
-                isdetermining_flow = True
+        for cell in cells[5:]:
+            location_uri = locations[entries[cell.c]["location"]]
+            activitytype = entries[cell.c]["activitytype"]
+            activity_type_uri = activitytypes[activitytype]
+            flow_object_uri = flowobjects[flow_object]
+            isdetermining_flow = isdiagonal(cell)
+            amount = get_amount(cells[4], cell)
 
-            if isunitneedsconversion(cells[4]):
-                amount = convertAmount(c.v, cells[4])
-            else:
-                amount = c.v
-            supply_flow, dict = format_supply_flow(
+            supply_flow, supply_flow_ids_dict = format_supply_flow(
                 amount,
-                unitURI,
-                locationURI,
-                activity_typeURI,
-                flow_objectURI,
-                yearURI,
+                unit_uri,
+                location_uri,
+                activity_type_uri,
+                flow_object_uri,
+                year_uri,
                 isdetermining_flow,
                 a_counter,
-                mapping_dict
+                mapping_dict,
             )
+            supply_flows.append(supply_flow)
             writer.write_obj(supply_flow)
     writer.finish()
     return supply_flows, mapping_dict
 
-def  process_use_row(index, row, entries, metadata, a_counter, mapping_dict):
+
+def get_amount(base_unit, cell):
+    """ Return the value of the cell, converted to Bonsai units if necessary"""
+    if isunitneedsconversion(base_unit):
+        return convert_amount(cell.v, base_unit)
+    return cell.v
+
+
+def process_use_row(index, row, entries, metadata, a_counter, mapping_dict):
     writer_domestic = StreamingCompressedJSONWriter("domestic_flows")
     writer_trade = StreamingCompressedJSONWriter("trade_flows")
     domestic_flows = []
@@ -122,74 +162,69 @@ def  process_use_row(index, row, entries, metadata, a_counter, mapping_dict):
     times = metadata["time"]
 
     if index > 3:
-        cells = [c for c in row if c.v !=0]
+        cells = [c for c in row if c.v != 0]
         row_data = cells[:5]
-
-        if "tonnes" == cells[4].v:
-            unitURI = units["kilogram"]
-        elif "TJ" == cells[4].v:
-            unitURI = units["megajoule"]
-        elif "Meuro" == cells[4].v:
-            unitURI = units["euro"]
-        else:
-            unitURI = units[cells[4].v]
+        unit_uri = get_unit_uri(cells[4], units)
 
         flow_object = cells[1].v
-        yearURI = times["2011"]
+        year_uri = times["2011"]
 
-        for c in cells[5:]:
-            locationURI = locations[entries[c.c]["location"]]
-            activitytype = entries[c.c]["activitytype"]
-            activity_typeURI = activitytypes[activitytype]
-            flow_objectURI = flowobjects[flow_object]
+        for cell in cells[5:]:
+            location_uri = locations[entries[cell.c]["location"]]
+            activitytype = entries[cell.c]["activitytype"]
+            activity_type_uri = activitytypes[activitytype]
+            flow_object_uri = flowobjects[flow_object]
 
-            if isunitneedsconversion(cells[4]):
-                amount = convertAmount(c.v, cells[4])
-            else:
-                amount = c.v
+            amount = get_amount(cells[4], cell)
 
-            if isdomesticuse(c, entries, row_data):
+            if isdomesticuse(cell, entries, row_data):
                 use_flow = format_domestic_use_flow(
                     amount,
-                    unitURI,
-                    locationURI, activity_typeURI, flow_objectURI, yearURI,
+                    unit_uri,
+                    location_uri,
+                    activity_type_uri,
+                    flow_object_uri,
+                    year_uri,
                     a_counter,
-                    mapping_dict
+                    mapping_dict,
                 )
                 domestic_flows.append(use_flow)
                 writer = writer_domestic
-            else: # Trade flow
+            else:  # Trade flow
                 # from _row_ region to _column_ region
-                from_locationURI = locations[cells[0].v]
-                to_locationURI = locationURI
+                from_location_uri = locations[cells[0].v]
+                to_location_uri = location_uri
                 use_flow = format_trade_flow(
                     amount,
-                    unitURI,
-                    from_locationURI,
-                    to_locationURI,
-                    activity_typeURI,
-                    flow_objectURI,
-                    yearURI,
+                    unit_uri,
+                    from_location_uri,
+                    to_location_uri,
+                    activity_type_uri,
+                    flow_object_uri,
+                    year_uri,
                     a_counter,
-                    mapping_dict
+                    mapping_dict,
                 )
                 trade_flows.append(use_flow)
                 writer = writer_trade
             writer.write_obj(use_flow)
-
+    writer_domestic.finish()
+    writer_trade.finish()
 
 
 def convert_supply_table(metadata, supplyfile, limit):
     mapping_dict = {}
     a_counter = itertools.count()
-    with open_workbook(supplyfile) as wb:
-        ws = wb.get_sheet(DATA_SHEET_INDEX)
-        entries = associate_col_activity(metadata["activitytype"], ws)
+    with open_workbook(supplyfile) as work_book:
+        work_sheet = work_book.get_sheet(DATA_SHEET_INDEX)
+        entries = associate_col_activity(work_sheet)
         if limit == -1:
-            limit = ws.dimension.h
-        for index, row in tqdm(enumerate(ws.rows()), total=limit):
+            limit = work_sheet.dimension.h
+        for index, row in tqdm(enumerate(work_sheet.rows()), total=limit):
             if index < limit:
-                process_supply_row(index, row, entries, metadata, a_counter, mapping_dict)
+                process_supply_row(
+                    index, row, entries, metadata, a_counter, mapping_dict
+                )
                 continue
             break
     return mapping_dict
@@ -199,7 +234,7 @@ def convert_use_table(metadata, usefile, limit, mapping_dict):
     a_counter = itertools.count()
     with open_workbook(usefile) as wb:
         ws = wb.get_sheet(DATA_SHEET_INDEX)
-        entries = associate_col_activity(metadata["activitytype"], ws)
+        entries = associate_col_activity(ws)
         if limit == -1:
             limit = ws.dimension.h
         for index, row in tqdm(enumerate(ws.rows()), total=limit):
@@ -210,10 +245,9 @@ def convert_use_table(metadata, usefile, limit, mapping_dict):
 
 
 def convert_tables(metadata, supplyfile, usefile, limit):
-
     mapping_dict = convert_supply_table(metadata, supplyfile, limit)
-
     convert_use_table(metadata, usefile, limit, mapping_dict)
+
 
 def convert_exiobase(supplyfile, usefile, limit, rdfpath):
     metadata = get_metadata(rdfpath)
