@@ -3,7 +3,8 @@ from pyxlsb import open_workbook
 from tqdm import tqdm
 from bontofrom.rdf_formatter import format_supply_flow, format_domestic_use_flow, format_trade_flow
 from .json_writer import StreamingCompressedJSONWriter
-from pprint import pprint
+from arborist import get_metadata
+
 import itertools
 
 DATA_SHEET_INDEX = 2
@@ -170,7 +171,7 @@ def  process_use_row(index, row, entries, metadata, a_counter, mapping_dict):
                 )
                 trade_flows.append(use_flow)
                 writer = writer_trade
-            writer.write(use_flow)
+            writer.write_obj(use_flow)
 
 
 
@@ -204,14 +205,12 @@ def convert_use_table(metadata, usefile, limit, mapping_dict):
             break
 
 
-def convert_tables(metadata, supplyfile, usefile, limit=20):
+def convert_tables(metadata, supplyfile, usefile, limit):
+
     mapping_dict = convert_supply_table(metadata, supplyfile, limit)
-    print("md after cst:")
-    print(mapping_dict["activities"])
-    print(mapping_dict["flows"])
+
     convert_use_table(metadata, usefile, limit, mapping_dict)
 
-
-def convert_exiobase(supplyfile, usefile):
-    metadata = get_metadata()
-    convert_tables(metadata, supplyfile, usefile)
+def convert_exiobase(supplyfile, usefile, limit):
+    metadata = get_metadata("../rdf")
+    convert_tables(metadata, supplyfile, usefile, limit)

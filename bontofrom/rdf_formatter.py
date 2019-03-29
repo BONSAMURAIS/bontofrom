@@ -114,6 +114,11 @@ def format_trade_flow(amount, unit, from_location, to_location, activity_type, f
     # New trade activity
     trade_activity_uri = "brdfsuex:{}".format(next(counter))
     flow_uri = "brdfsuex:{}".format(next(counter))
+    if (activity_type, from_location) not in mapping_dict["activities"].keys() :
+        mapping_dict["activities"][(activity_type, from_location)] = "brdfsuex:{}".format(next(counter))
+    if (activity_type, to_location) not in mapping_dict["activities"].keys() :
+        mapping_dict["activities"][(activity_type, to_location)] = "brdfsuex:{}".format(next(counter))
+
     output = [{
         # Activity instance
         "@id": trade_activity_uri,

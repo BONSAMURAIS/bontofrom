@@ -3,7 +3,7 @@
 """Convert metadata and data to bonsai ontology
 
 Usage:
-  bontofrom-cli metadata exiobase -s SUPPLY_TABLE_FILE -u USE_TABLE_FILE
+  bontofrom-cli metadata exiobase -s SUPPLY_TABLE_FILE -u USE_TABLE_FILE [-l 100]
   bontofrom-cli metadata upload
 
 Options:
@@ -11,6 +11,7 @@ Options:
   --version     Show version.
   -s SUPPLY_TABLE_FILE
   -u USE_TABLE_FILE
+  -l max number of rows to evaluate in exiobase files
 
 """
 from docopt import docopt
@@ -22,7 +23,11 @@ def main():
     try:
         args = docopt(__doc__, version='0.1')
         if args['metadata'] and args['exiobase']:
-            convert_exiobase(args['-s'], args['-u'])
+            if args['-l']:
+                limit = int(args['-l'])
+            else:
+                limit = -1
+            convert_exiobase(args['-s'], args['-u'], limit)
         else:
             print("Doing nothing")
     except KeyboardInterrupt:
