@@ -3,7 +3,7 @@
 """Convert metadata and data to bonsai ontology
 
 Usage:
-  bontofrom-cli metadata exiobase -s SUPPLY_TABLE_FILE -u USE_TABLE_FILE [-l 100]
+  bontofrom-cli metadata exiobase -s SUPPLY_TABLE_FILE -u USE_TABLE_FILE [-m 100] -r RDF_PATH
   bontofrom-cli metadata upload
 
 Options:
@@ -11,23 +11,31 @@ Options:
   --version     Show version.
   -s SUPPLY_TABLE_FILE
   -u USE_TABLE_FILE
-  -l max number of rows to evaluate in exiobase files
+  -m maximum number of rows to evaluate in exiobase files
+  -r RDF_PATH path to the rdf folder from: https://github.com/BONSAMURAIS/rdf
 
 """
 from docopt import docopt
 from bontofrom.convert_exiobase import convert_exiobase
 import sys
+from datetime import datetime
 
+import logging
 
 def main():
+    logging.basicConfig(filename="bontofrom.log", level=logging.INFO)
     try:
         args = docopt(__doc__, version='0.1')
-        if args['metadata'] and args['exiobase']:
-            if args['-l']:
-                limit = int(args['-l'])
+        if args['metadata'] and args['exiobase'] :
+            if args['-m']:
+                limit = int(args['-m'])
             else:
                 limit = -1
-            convert_exiobase(args['-s'], args['-u'], limit)
+            start = datetime.now()
+            logging.info("Started {}".format(start.isoformat()))
+            convert_exiobase(args['-s'], args['-u'], limit, args['-r'])
+            end = datetime.now()
+            logging.info("Ended {}".format(start.isoformat()))
         else:
             print("Doing nothing")
     except KeyboardInterrupt:

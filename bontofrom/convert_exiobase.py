@@ -1,9 +1,12 @@
 from bontofrom.convert_metadata import get_metadata
 from pyxlsb import open_workbook
 from tqdm import tqdm
-from bontofrom.rdf_formatter import format_supply_flow, format_domestic_use_flow, format_trade_flow
+from .rdf_formatter import format_supply_flow, format_domestic_use_flow, format_trade_flow
 from .json_writer import StreamingCompressedJSONWriter
-from arborist import get_metadata
+from .load_metadata import get_metadata
+
+import logging
+
 
 import itertools
 
@@ -15,6 +18,7 @@ MEUROTOEURO = 1e06
 
 def associate_col_activity(activity_metadata, ws):
     """ Create dictionary of column index -> {activitytype, location}
+
     """
     entries = {}
     for index, row in enumerate(ws.rows()):
@@ -211,6 +215,6 @@ def convert_tables(metadata, supplyfile, usefile, limit):
 
     convert_use_table(metadata, usefile, limit, mapping_dict)
 
-def convert_exiobase(supplyfile, usefile, limit):
-    metadata = get_metadata("../rdf")
+def convert_exiobase(supplyfile, usefile, limit, rdfpath):
+    metadata = get_metadata(rdfpath)
     convert_tables(metadata, supplyfile, usefile, limit)
