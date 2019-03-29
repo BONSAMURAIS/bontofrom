@@ -10,9 +10,9 @@ class StreamingCompressedJSONWriter:
             filepath += ".jsonld.bz2"
         self.file = bz2.open(filepath, mode='at', compresslevel=9, encoding='utf-8')
         open(filepath, "a")
-        self.file.write('{"@context": ')
+        self.file.write('{\n\t"@context": ')
         self.write_obj(GENERIC_HEADER["@context"], header=True)
-        self.file.write('"@data": [')
+        self.file.write('\t"@graph": [\n')
 
     def write_obj(self, obj, header=False):
         """Write each element of a graph instance (activity, flow, or otherwise).
