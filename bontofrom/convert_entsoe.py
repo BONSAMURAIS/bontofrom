@@ -12,12 +12,13 @@ def convert_entsoe_to_jsonld(year, filepath, rdf_base_dir):
     counter = count(1)
 
     # Get grid mixes
-    for i, (technology, country, amount) in enumerate(iterate_generation(year)):
-
-        if i > 10:
-            break
-
+    for technology, country, amount in iterate_generation(year):
         mapping = {}
+
+        if country not in metadata['location']:
+            # Skip countries which don't match EXIOBASE world
+            continue
+
         data, mapping = format_supply_flow(
             amount,
             metadata['unit']['megajoule'],
