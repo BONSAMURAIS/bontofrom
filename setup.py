@@ -42,6 +42,8 @@ setup(
     install_requires=[
         'docopt',
         'requests',
+        'rdflib',
+        'tqdm',
     ],
     url="https://github.com/BONSAMURAIS/bontofrom",
     long_description=open('README.md').read(),

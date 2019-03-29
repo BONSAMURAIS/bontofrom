@@ -1,18 +1,42 @@
 import csv
 from pathlib import Path
+from rdflib import Graph, Literal, RDF, URIRef, Namespace
+from rdflib.namespace import DC, RDFS
 
 metadata_dir = Path(__file__).parent / "meta"
 
-def get_metadata():
+
+def get_turtle_labels(filepath):
+    if isinstance(filepath, Path):
+        filepath = filepath.absolute()
+
+    g = Graph()
+    g.parse(str(filepath), format="turtle")
+
+    label = URIRef('http://www.w3.org/2000/01/rdf-schema#label')
+
+    for x, y, z in g:
+        if y == label:
+            # Flip to go from label to URI
+            yield str(z), str(x)
+
+def get_metadata(rdf_base):
+    if not isinstance(rdf_base, Path):
+        rdf_base = Path(rdf_base)
+
     metadata = {}
 
     _ = lambda x: x if x.startswith("http://") else "http://" + x
 
-    with open(metadata_dir / "exiobase_activitytype_URIs.csv", "r", encoding='utf-8') as f:
-        reader = csv.reader(f)
-        # Skip header
-        next(reader)
-        metadata['activitytype'] = {row[0]: _(row[3]) for row in reader if row}
+    exiobase_activity_types = dict(get_turtle_labels(
+        rdf_base / "activitytype" / "exiobase3_3_17" / "exiobase3_3_17.ttl"
+    ))
+    grid_activity_types = dict(get_turtle_labels(
+        rdf_base / "activitytype" / "core" / "electricity_grid" / "electricity_grid.ttl"
+    ))
+
+    metadata["activitytype"] = exiobase_activity_types
+    metadata["activitytype"].update(grid_activity_types)
 
     with open(metadata_dir / "exiobase_flowobject_URIs.csv", "r", encoding='utf-8') as f:
         reader = csv.reader(f)
@@ -31,13 +55,13 @@ def get_metadata():
         # Skip header
         next(reader)
         metadata['elem_flows'] = {row[0]: _(row[1]) for row in reader if row}
-        
+
     with open(metadata_dir / "lcia_activitytype_uri.csv", "r", encoding='utf-8') as f:
         reader = csv.reader(f)
         # Skip header
         next(reader)
         metadata['lcia_activitytype'] = {row[0]: _(row[1]) for row in reader if row}
-        
+
     with open(metadata_dir / "lcia_flowobject_uri.csv", "r", encoding='utf-8') as f:
         reader = csv.reader(f)
         # Skip header
