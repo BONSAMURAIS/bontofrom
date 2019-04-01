@@ -17,7 +17,7 @@ from .rdf_formatter import (
 # Exiobase comes with tonnes, TJ and Meuro values, but BONSAI uses kg, MJ & €
 DATA_SHEET_INDEX = 2
 TONNESTOKG = 1000
-TJTOMJ = 1 / 1e06
+TJTOMJ = 1e06
 MEUROTOEURO = 1e06
 
 TONNES = "tonnes"
