@@ -31,22 +31,21 @@ install:
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
       conda create -n test-environment python=$TRAVIS_PYTHON_VERSION pytest pytest-cov coveralls;
       source activate test-environment;
-      #pip install <add any other dependencies not available in conda here>;
       pip3 install -e .;
     else
       pip3 install -r ci/macos-travis.txt;
       pip3 install -e .;
     fi
 script:
+  - pytest --cov=bontofrom
+  - pytest --cov=bontofrom --cov-report xml:coverage.xml tests
+  - bandit --format json --output bandit-report.json --recursive . 
+  - "pylint . -r n --msg-template='{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}' > pylint-report.txt"
+  - coveralls;
+  - sonar-scanner;
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
       pwd;
       ls;
-      pytest --cov=bontofrom;
-      pytest --cov=bontofrom --cov-report xml:coverage.xml tests;
-      bandit --format json --output bandit-report.json --recursive .;
-      pylint . -r n --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" > pylint-report.txt;
-      coveralls;
-      sonar-scanner;
       if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
         conda install conda-build anaconda-client conda-verify;
         bash ci/conda_upload.sh;
